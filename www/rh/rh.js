@@ -1,5 +1,8 @@
 (() => {
   'use strict';
+  // Páginas do RH não usam o bootstrap clássico: remove eventual bloqueio antigo do PWA.
+  document.getElementById('manari-first-paint-gate')?.remove();
+  document.getElementById('manari-classic-gate')?.remove();
   const cfg=window.MANARI_CONFIG||{}, el=id=>document.getElementById(id);
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safeUrl=s=>{try{const u=new URL(String(s),location.href);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
