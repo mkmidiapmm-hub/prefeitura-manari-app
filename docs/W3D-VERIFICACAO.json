@@ -1,0 +1,932 @@
+{
+  "checked": "2026-11-11",
+  "pages": [
+    {
+      "url": "https://w3d.app.br/manari/",
+      "status": 200,
+      "title": "LEIS MUNICIPAIS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/avaliacao-de-transparencia/",
+      "status": 200,
+      "title": "AVALIAÇÃO DE TRANSPARÊNCIA",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/conselho-de-acompanhamento-e-controle-social-do-fundeb/",
+      "status": 200,
+      "title": "Conselho de Acompanhamento e Controle Social do FUNDEB",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/contratos/",
+      "status": 200,
+      "title": "CONTRATOS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/contratos/contratos-administrativos/",
+      "status": 200,
+      "title": "CONTRATOS ADMINISTRATIVOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Contratos_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/contratos/lista-de-fiscais-de-contratos/",
+      "status": 200,
+      "title": "LISTA DE FISCAIS DE CONTRATOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Contratos_Fiscais/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/contratos/termo-aditivo/",
+      "status": 200,
+      "title": "TERMO ADITIVO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Termo_Aditivo_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/contratos/termo-de-prorrogacao-de-contratos/",
+      "status": 200,
+      "title": "TERMO DE PRORROGAÇÃO DE CONTRATOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Termo_Contratos_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/demonstrativos-contabeis/",
+      "status": 200,
+      "title": "DEMONSTRATIVOS CONTÁBEIS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/demonstrativos-contabeis/balancetes/",
+      "status": 200,
+      "title": "BALANCETES",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Demonstrativos_Contabeis_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/despesas/",
+      "status": 200,
+      "title": "DESPESAS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/despesas/despesas-detalhadas/",
+      "status": 200,
+      "title": "DESPESAS DETALHADAS / EMPENHOS",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/despesas/despesas-extra-orcamentarias/",
+      "status": 200,
+      "title": "DESPESAS EXTRA-ORÇAMENTÁRIAS",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/despesas/despesas-gerais/",
+      "status": 200,
+      "title": "DESPESAS GERAIS",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa#resumoOrc"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/despesas/despesas-liquidadas/",
+      "status": 200,
+      "title": "DESPESAS LIQUIDADAS",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/despesas/pagamentos/",
+      "status": 200,
+      "title": "PAGAMENTOS",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/educacao/",
+      "status": 200,
+      "title": "EDUCAÇÃO",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/educacao/creches-municipais-e-lista-de-espera/",
+      "status": 200,
+      "title": "CRECHES MUNICIPAIS E LISTA DE ESPERA",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Educacao_Acesso_Creche_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/educacao/plano-municipal-de-educacao-e-relatorio-de-resultados/",
+      "status": 200,
+      "title": "PLANO MUNICIPAL DE EDUCAÇÃO E RELATÓRIO DE RESULTADOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Educaocao_Plano_Municipal_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/fiscalizacao-e-controle/",
+      "status": 200,
+      "title": "FISCALIZAÇÃO E CONTROLE",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/fiscalizacao-e-controle/resulta-de-auditorias-realizadas-pelo-controle-interno/",
+      "status": 200,
+      "title": "RESULTA DE AUDITORIAS REALIZADAS PELO CONTROLE INTERNO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Auditoria_Interna_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/fornecedor/",
+      "status": 200,
+      "title": "FORNECEDOR",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Fornecedor_Despesa/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/glossario/",
+      "status": 200,
+      "title": "GLOSSÁRIO",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/atos-oficiais/",
+      "status": 200,
+      "title": "ATOS OFICIAIS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/atos-oficiais/decretos/",
+      "status": 200,
+      "title": "DECRETOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Decretos_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/atos-oficiais/edital-de-concurso-publico/",
+      "status": 200,
+      "title": "EDITAL DE CONCURSO PÚBLICO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Edital_Concurso_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/atos-oficiais/leis/",
+      "status": 200,
+      "title": "LEIS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Leis_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/atos-oficiais/plano-de-contingencia/",
+      "status": 200,
+      "title": "PLANO DE CONTINGÊNCIA",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Plano_Contingencia_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/atos-oficiais/portarias/",
+      "status": 200,
+      "title": "PORTARIAS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Portarias_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/atos-oficiais/recomendacoes-do-ministerio-publico/",
+      "status": 200,
+      "title": "RECOMENDAÇÕES DO MINISTÉRIO PÚBLICO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Recomendacao_MP_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/atos-oficiais/termo-de-ajuste-de-conduta/",
+      "status": 200,
+      "title": "TERMO DE AJUSTE DE CONDUTA",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Termo_Ajuste_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/institucional/lei-de-acesso-a-informacao/",
+      "status": 200,
+      "title": "LEI DE ACESSO A INFORMAÇÃO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Lei_de_Acesso_Informacao_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/lgpd/lei-geral-de-protecao-de-dados-lgpd/",
+      "status": 200,
+      "title": "Lei Geral de Proteção de Dados &#8211; LGPD",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/",
+      "status": 200,
+      "title": "LICITAÇÕES",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/atas-de-registro-de-preco/",
+      "status": 200,
+      "title": "ATAS DE REGISTRO DE PREÇO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_ATA_PRECO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/aviso-de-licitacao/",
+      "status": 200,
+      "title": "AVISO DE LICITAÇÃO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Aviso_Licitacao_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/dispensa-de-licitacao/",
+      "status": 200,
+      "title": "DISPENSA DE LICITAÇÃO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Dispensa/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/inexibilidade/",
+      "status": 200,
+      "title": "INEXIBILIDADE",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Inexibilidade/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/licitacoes-desertas/",
+      "status": 200,
+      "title": "LICITAÇÕES DESERTAS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Deserta/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/licitacoes-fracassadas/",
+      "status": 200,
+      "title": "LICITAÇÕES FRACASSADAS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Deserta_FRACASSADO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/plano-de-contratacoes-anual/",
+      "status": 200,
+      "title": "PLANO DE CONTRATAÇÕES ANUAL",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Plano_Contratacao_Anual_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/licitacoes/processos-licitatorios/",
+      "status": 200,
+      "title": "PROCESSOS LICITATÓRIOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/mapa-do-site/",
+      "status": 200,
+      "title": "MAPA DO SITE",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/o-portal/",
+      "status": 200,
+      "title": "O Portal",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/perguntas-frequentes/",
+      "status": 200,
+      "title": "PERGUNTAS FREQUENTES",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/planejamento-orcamentario/",
+      "status": 200,
+      "title": "PLANEJAMENTO ORÇAMENTÁRIO",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/planejamento-orcamentario/audiencias-publicas/",
+      "status": 200,
+      "title": "AUDIÊNCIAS PÚBLICAS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Audiencia_Publica_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/planejamento-orcamentario/lei-de-diretrizes-orcamentarias-ldo/",
+      "status": 200,
+      "title": "LEI DE DIRETRIZES ORÇAMENTÁRIAS &#8211; LDO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Planejamento_Orcamentario_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/planejamento-orcamentario/lei-orcamentaria-anual-loa/",
+      "status": 200,
+      "title": "LEI ORÇAMENTÁRIA ANUAL &#8211; LOA",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Planejamento_Orcamentario_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/planejamento-orcamentario/planejamento-estrategico-institucional/",
+      "status": 200,
+      "title": "PLANEJAMENTO ESTRATÉGICO INSTITUCIONAL",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Plano_Estrategico_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/planejamento-orcamentario/plano-plurianual-ppa/",
+      "status": 200,
+      "title": "PLANO PLURIANUAL &#8211; PPA",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Planejamento_Orcamentario_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/planejamento-orcamentario/relatorio-de-auditoria-interna/",
+      "status": 200,
+      "title": "RELATÓRIO DE AUDITORIA INTERNA",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Auditoria_Interna_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/pnab/",
+      "status": 200,
+      "title": "PNAB 2025",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/consulta_legislativo_outros_atos_externo/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/prestacao-de-contas/",
+      "status": 200,
+      "title": "PRESTAÇÃO DE CONTAS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/prestacao-de-contas/apreciacao-julgamento-parecer-previo/",
+      "status": 200,
+      "title": "APRECIAÇÃO, JULGAMENTO PARECER, PRÉVIO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Parecer_Previo_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/prestacao-de-contas/declaracao-de-contas-anual/",
+      "status": 200,
+      "title": "DECLARAÇÃO DE CONTAS ANUAL",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Declaracao_Contas_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/prestacao-de-contas/julgamento-de-contas-pelo-poder-legislativo/",
+      "status": 200,
+      "title": "JULGAMENTO DE CONTAS PELO PODER LEGISLATIVO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Julgamento_Legislativo_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/prestacao-de-contas/prestacao-de-contas-anual/",
+      "status": 200,
+      "title": "PRESTAÇÃO DE CONTAS ANUAL",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Prestacao_Contas_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/prestacao-de-contas/relatorio-de-gestao-ou-atividades/",
+      "status": 200,
+      "title": "RELATÓRIO DE GESTÃO OU ATIVIDADES",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Rel_Gestao_Municipal_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/receita/",
+      "status": 200,
+      "title": "RECEITA",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/receita"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/receita/duodecimo-da-camara-municipal/",
+      "status": 200,
+      "title": "DUÓDECIMO DA CÂMARA MUNICIPAL",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_ReceitaOrcamentaria_dcam/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/receitas-extra-orcamentarias/",
+      "status": 200,
+      "title": "RECEITAS EXTRA-ORÇAMENTÁRIAS",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/receita"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/",
+      "status": 200,
+      "title": "RECURSOS HUMANOS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/cargos/",
+      "status": 200,
+      "title": "CARGOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Folha_Cargos/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/diarias/",
+      "status": 200,
+      "title": "DIÁRIAS",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/diarias"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/emissao-de-contracheque/",
+      "status": 200,
+      "title": "EMISSÃO DE CONTRACHEQUE",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/ctr_acessar_folha_servidor/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/estagiarios/",
+      "status": 200,
+      "title": "ESTAGIÁRIOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Estagiarios_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/gastos-com-passagens-aereas/",
+      "status": 200,
+      "title": "GASTOS COM PASSAGENS AÉREAS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Gastos_Com_Passagens_Aereas/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/servidores-e-remuneracoes/",
+      "status": 200,
+      "title": "SERVIDORES E REMUNERAÇÕES",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Folha_Servidor_Remuneracao/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/tabela-de-diarias/",
+      "status": 200,
+      "title": "TABELA DE DIÁRIAS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Tabela_Diarias_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/recursos-humanos/terceirizados/",
+      "status": 200,
+      "title": "TERCEIRIZADOS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Terceirizados_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/relatorios-fiscais/",
+      "status": 200,
+      "title": "RELATÓRIOS FISCAIS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/relatorios-fiscais/relatorio-de-gestao-fiscal-rgf/",
+      "status": 200,
+      "title": "RELATÓRIO DE GESTÃO FISCAL &#8211; RGF",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_RGF_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/relatorios-fiscais/relatorio-resumido-da-execucao-orcamentaria-rreo/",
+      "status": 200,
+      "title": "RELATÓRIO RESUMIDO DA EXECUÇÃO ORÇAMENTÁRIA &#8211; RREO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_RREO_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/saude/",
+      "status": 200,
+      "title": "SAÚDE",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/saude/escala-dos-profissionais-de-saude/",
+      "status": 200,
+      "title": "ESCALA DOS PROFISSIONAIS DE SAÚDE",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Escalas_Profissionais_Saude_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/saude/lista-de-medicamentos-e-como-ter-acesso/",
+      "status": 200,
+      "title": "LISTA DE MEDICAMENTOS E COMO TER ACESSO",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_lista_Medicamentos_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/saude/plano-municipal-de-saude/",
+      "status": 200,
+      "title": "PLANO MUNICIPAL DE SAÚDE",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Plano_Municipal_Saude_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/saude/programa-anual-de-saude/",
+      "status": 200,
+      "title": "PROGRAMA ANUAL DE SAÚDE",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Programa_Anual_Saude_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/saude/relatorio-de-gestao-anual-de-saude/",
+      "status": 200,
+      "title": "RELATÓRIO DE GESTÃO ANUAL DE SAÚDE",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Rel_Gestao_Municipal_SAUDE_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/transferencia-s-financeiras/",
+      "status": 200,
+      "title": "TRANSFERÊNCIA S FINANCEIRAS",
+      "frames": []
+    },
+    {
+      "url": "https://w3d.app.br/manari/transferencia-s-financeiras/acordos-sem-transfencias-de-recursos-financeiros/",
+      "status": 200,
+      "title": "ACORDOS SEM TRANSFÊNCIAS DE RECURSOS FINANCEIROS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Convenios_nao_Financeiros_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/transferencia-s-financeiras/convenios-firmados-com-outras-entidades/",
+      "status": 200,
+      "title": "CONVÊNIOS FIRMADOS COM OUTRAS ENTIDADES",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_Convenio_GRID_EXTERNO/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/transferencia-s-financeiras/transferencias-financeiras-concedidas/",
+      "status": 200,
+      "title": "TRANSFERÊNCIAS FINANCEIRAS CONCEDIDAS",
+      "frames": [
+        "https://w3d.app.br/transparencia/manari/Consulta_TransferenciasConcedidas/"
+      ]
+    },
+    {
+      "url": "https://w3d.app.br/manari/transferencia-s-financeiras/transferencias-financeiras-recebidas/",
+      "status": 200,
+      "title": "TRANSFERÊNCIAS FINANCEIRAS RECEBIDAS",
+      "frames": [
+        "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/receita"
+      ]
+    }
+  ],
+  "embeddedChecks": [
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Audiencia_Publica_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Audiencia_Publica_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Auditoria_Interna_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Auditoria_Interna_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Aviso_Licitacao_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Aviso_Licitacao_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Contratos_Fiscais/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Contratos_Fiscais/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Contratos_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Contratos_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Convenio_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Convenio_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Convenios_nao_Financeiros_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Convenios_nao_Financeiros_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Declaracao_Contas_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Declaracao_Contas_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Decretos_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Decretos_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Demonstrativos_Contabeis_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Demonstrativos_Contabeis_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Edital_Concurso_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Edital_Concurso_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Educacao_Acesso_Creche_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Educacao_Acesso_Creche_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Educaocao_Plano_Municipal_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Educaocao_Plano_Municipal_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Escalas_Profissionais_Saude_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Escalas_Profissionais_Saude_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Estagiarios_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Estagiarios_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Folha_Cargos/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Folha_Cargos/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Folha_Servidor_Remuneracao/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Folha_Servidor_Remuneracao/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Fornecedor_Despesa/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Fornecedor_Despesa/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Gastos_Com_Passagens_Aereas/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Gastos_Com_Passagens_Aereas/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Julgamento_Legislativo_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Julgamento_Legislativo_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Lei_de_Acesso_Informacao_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Lei_de_Acesso_Informacao_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Leis_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Leis_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_ATA_PRECO/",
+      "status": 200,
+      "retry": true,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_ATA_PRECO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Deserta/",
+      "status": 200,
+      "retry": true,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Deserta/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Deserta_FRACASSADO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Deserta_FRACASSADO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Dispensa/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Dispensa/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Inexibilidade/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Licitacoes_Inexibilidade/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Parecer_Previo_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Parecer_Previo_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Planejamento_Orcamentario_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Planejamento_Orcamentario_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Plano_Contingencia_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Plano_Contingencia_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Plano_Contratacao_Anual_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Plano_Contratacao_Anual_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Plano_Estrategico_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Plano_Estrategico_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Plano_Municipal_Saude_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Plano_Municipal_Saude_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Portarias_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Portarias_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Prestacao_Contas_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Prestacao_Contas_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Programa_Anual_Saude_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Programa_Anual_Saude_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_RGF_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_RGF_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_RREO_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_RREO_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_ReceitaOrcamentaria_dcam/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_ReceitaOrcamentaria_dcam/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Recomendacao_MP_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Recomendacao_MP_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Rel_Gestao_Municipal_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Rel_Gestao_Municipal_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Rel_Gestao_Municipal_SAUDE_GRID_EXTERNO/",
+      "status": 200,
+      "retry": true,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Rel_Gestao_Municipal_SAUDE_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Tabela_Diarias_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Tabela_Diarias_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Terceirizados_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Terceirizados_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Termo_Aditivo_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Termo_Aditivo_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Termo_Ajuste_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Termo_Ajuste_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_Termo_Contratos_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_Termo_Contratos_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_TransferenciasConcedidas/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_TransferenciasConcedidas/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/Consulta_lista_Medicamentos_GRID_EXTERNO/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/Consulta_lista_Medicamentos_GRID_EXTERNO/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/consulta_legislativo_outros_atos_externo/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/consulta_legislativo_outros_atos_externo/"
+    },
+    {
+      "url": "https://w3d.app.br/transparencia/manari/ctr_acessar_folha_servidor/",
+      "status": 200,
+      "final": "https://w3d.app.br/transparencia/manari/ctr_acessar_folha_servidor/"
+    },
+    {
+      "url": "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa",
+      "status": 200,
+      "final": "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa"
+    },
+    {
+      "url": "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa#resumoOrc",
+      "status": 200,
+      "final": "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/despesa#resumoOrc"
+    },
+    {
+      "url": "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/diarias",
+      "status": 200,
+      "final": "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/diarias"
+    },
+    {
+      "url": "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/receita",
+      "status": 200,
+      "final": "https://www.municipioonline.com.br/pe/prefeitura/manari/cidadao/receita"
+    }
+  ]
+}
