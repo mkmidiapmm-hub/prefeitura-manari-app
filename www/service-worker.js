@@ -1,5 +1,5 @@
-const CACHE='manari-v6-23-acesso-rh';
-const VERSION='6.23';
+const CACHE='manari-v6-24-contracheque-municipio';
+const VERSION='6.24';
 const TRANSPARENCIA_BASE=new URL('transparencia/',self.registration.scope).pathname;
 const DEMANDAS_BASE=new URL('gestao-demandas/',self.registration.scope).pathname;
 const isTransparenciaPath=pathname=>pathname===TRANSPARENCIA_BASE.slice(0,-1)||pathname.startsWith(TRANSPARENCIA_BASE);

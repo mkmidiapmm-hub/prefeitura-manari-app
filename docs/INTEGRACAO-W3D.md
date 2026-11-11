@@ -7,3 +7,5 @@ As páginas específicas da W3D foram coletadas do mapa do site e verificadas po
 Os módulos próprios e o banco não foram apagados ou alterados. A Central não consulta os registros vazios locais. Destinos não identificados levam ao guia de serviços, nunca à página inicial da W3D nem a um módulo próprio vazio.
 
 Verificação adicional: os 56 destinos incorporados responderam HTTP 200; três retornaram 503 no primeiro acesso e 200 em uma segunda conferência. A conferência verifica disponibilidade e destino, sem afirmar completude, atualização ou conformidade dos registros mantidos pelo fornecedor. Nenhum download, documento ou histórico externo foi excluído.
+
+Atualização de contracheque (11/11/2026): a pedido do responsável pelo portal, o acesso do servidor foi alterado para https://www.municipioonline.com.br/pe/prefeitura/manari/servidor/login. Página conferida com campos CPF/senha, primeiro acesso e recuperação. Botão “Meu contracheque” disponível no topo e no RH; aliases de Contracheque Online e Portal do Servidor seguem esse destino. Não houve acesso a conta de funcionário.
