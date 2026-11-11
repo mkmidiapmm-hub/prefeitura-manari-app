@@ -17,7 +17,7 @@
 
 // Prefeitura de Manari — modo clássico V6.0
 (() => {
-  if(window.__MANARI_CLASSIC_BOOTSTRAP__)return;window.__MANARI_CLASSIC_BOOTSTRAP__=true;const VERSION='6.24';
+  if(window.__MANARI_CLASSIC_BOOTSTRAP__)return;window.__MANARI_CLASSIC_BOOTSTRAP__=true;const VERSION='6.25';
   const gate=document.createElement('style');gate.id='manari-classic-gate';gate.textContent='.app-shell,.main-view,main{visibility:hidden!important}';document.head.appendChild(gate);
   const reveal=()=>{document.getElementById('manari-classic-gate')?.remove();document.getElementById('manari-first-paint-gate')?.remove()};setTimeout(reveal,5000);
   document.getElementById('manariSocialApp')?.remove();document.body?.classList.remove('manari-social-v2');document.querySelectorAll('#app,.app-shell,.site-shell,main').forEach(el=>el.removeAttribute('aria-hidden'));document.getElementById('manari-v4-boot-gate')?.remove();document.getElementById('manari-preboot')?.remove();
