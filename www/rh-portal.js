@@ -26,7 +26,7 @@
       if(seq!==serial||!isRH())return;
       if(hero.data){
         const p=root.querySelector('.hero-copy>p');if(p&&hero.data.body)p.textContent=hero.data.body;
-        const h=root.querySelector('.hero-copy h1');if(h&&hero.data.title)h.textContent=hero.data.title;
+        const h=root.querySelector('.hero-copy h1');if(h&&hero.data.title&&hero.data.title!=='Recursos Humanos')h.textContent=hero.data.title;
         const img=root.querySelector('img[data-media-slot="rh-hero"]');const source=url(hero.data.value?.image_url);
         if(img&&source){img.src=source;img.dataset.fallback=source}
       }
