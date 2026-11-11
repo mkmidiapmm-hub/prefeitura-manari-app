@@ -1,5 +1,5 @@
-const CACHE='manari-v6-25-rh-portal-principal';
-const VERSION='6.25';
+const CACHE='manari-v6-26-rh-pagina';
+const VERSION='6.26';
 const TRANSPARENCIA_BASE=new URL('transparencia/',self.registration.scope).pathname;
 const DEMANDAS_BASE=new URL('gestao-demandas/',self.registration.scope).pathname;
 const isTransparenciaPath=pathname=>pathname===TRANSPARENCIA_BASE.slice(0,-1)||pathname.startsWith(TRANSPARENCIA_BASE);
@@ -12,7 +12,7 @@ const isRhPath=pathname=>pathname===RH_BASE.slice(0,-1)||pathname.startsWith(RH_
 const OUV_BASE=new URL('ouvidoria/',self.registration.scope).pathname;
 const isOuvidoriaPath=pathname=>pathname===OUV_BASE.slice(0,-1)||pathname.startsWith(OUV_BASE);
 const isEsicPath=pathname=>pathname===ESIC_BASE.slice(0,-1)||pathname.startsWith(ESIC_BASE);
-const CORE=['portal-service-directory.js','transparencia/directory.js','portal-runtime.js','transparency-catalog.js','transparency-utils.js','portal-pntp-review.js','portal-public-tools.js','portal-accessibility.js','portal-accessibility.css','transparencia/index.html','transparencia/app.js','transparencia/styles.css','novembro-azul.js','novembro-azul.css','portal-headings.js','assets/fonts/montserrat-bold.ttf','portal-access-requests.js','cadastro.html','cadastro.js','cadastro.css','assets/feed-noticias.png','portal-feed.js','portal-feed.css','./','index.html','styles.css','classic-responsive.css','app.js','config.js','laws.js','sidebar-menu.js','nav-fix.js','portal-internal.css','portal-auth.css','portal-cms.css','portal-editor.css','transparency-center.css','portal-internal.js','portal-auth.js','portal-cms.js','portal-cms-bridge.js','portal-editor.js','portal-image-lock.js','transparency-center.js','manifest.webmanifest','app-icon-192.png','app-icon-512.png','manari-educacao-conferencia.png'];
+const CORE=['portal-service-directory.js','transparencia/directory.js','portal-runtime.js','transparency-catalog.js','transparency-utils.js','portal-pntp-review.js','portal-public-tools.js','portal-accessibility.js','portal-accessibility.css','rh/index.html','transparencia/index.html','transparencia/app.js','transparencia/styles.css','novembro-azul.js','novembro-azul.css','portal-headings.js','assets/fonts/montserrat-bold.ttf','portal-access-requests.js','cadastro.html','cadastro.js','cadastro.css','assets/feed-noticias.png','portal-feed.js','portal-feed.css','./','index.html','styles.css','classic-responsive.css','app.js','config.js','laws.js','sidebar-menu.js','nav-fix.js','portal-internal.css','portal-auth.css','portal-cms.css','portal-editor.css','transparency-center.css','portal-internal.js','portal-auth.js','portal-cms.js','portal-cms-bridge.js','portal-editor.js','portal-image-lock.js','transparency-center.js','manifest.webmanifest','app-icon-192.png','app-icon-512.png','manari-educacao-conferencia.png'];
 const SUPABASE_CDN='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js';
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
