@@ -1,4 +1,5 @@
--- This script is a transaction fixture; caller supplies BEGIN/ROLLBACK.
+-- Standalone transaction: never persist fixture users, settings or notifications.
+begin;
 insert into auth.users(id,aud,role,email,email_confirmed_at,raw_app_meta_data,raw_user_meta_data) values
  ('76c046c7-78dd-4b73-8d53-c93f4c4da001','authenticated','authenticated','esic-flow-owner@example.invalid',now(),'{}','{}'),
  ('76c046c7-78dd-4b73-8d53-c93f4c4da002','authenticated','authenticated','esic-flow-other@example.invalid',now(),'{}','{}'),
@@ -97,3 +98,5 @@ do $test$ declare q jsonb;job jsonb;before integer;rid uuid:=current_setting('te
  if not exists(select 1 from public.manari_digital_mail_queue where id=(job->>'id')::uuid and state='pendente' and attempts=1 and next_attempt_at>now()) then raise exception 'FAIL: retry backoff';end if;
  begin perform public.manari_esic_mail_runtime('bad-token');raise exception 'FAIL: worker without token';exception when insufficient_privilege then null;end;
 end $test$;
+
+rollback;

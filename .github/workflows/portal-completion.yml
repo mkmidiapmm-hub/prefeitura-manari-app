@@ -1,0 +1,19 @@
+name: Verificar portal e Transparência
+on:
+  push:
+    branches: [main]
+    paths: ['www/**', 'tests/**', 'database/**', '.github/workflows/portal-completion.yml']
+  pull_request:
+    paths: ['www/**', 'tests/**', 'database/**', '.github/workflows/portal-completion.yml']
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Testar fluxos e exportações
+        run: node --test tests/*.test.mjs tests/*.test.cjs
+      - name: Verificar retorno de autenticação
+        run: node tests/email-redirect.cjs

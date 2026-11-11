@@ -1,0 +1,1336 @@
+[
+  {
+    "module": "receitas",
+    "title": "Receitas",
+    "department_code": "financas",
+    "description": "Cadastro estruturado das receitas municipais",
+    "fields": [
+      {
+        "key": "exercise",
+        "type": "number",
+        "label": "Exercício",
+        "required": true
+      },
+      {
+        "key": "month",
+        "type": "month",
+        "label": "Mês"
+      },
+      {
+        "key": "source",
+        "type": "text",
+        "label": "Fonte de recurso"
+      },
+      {
+        "key": "category",
+        "type": "text",
+        "label": "Categoria da receita"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor",
+        "required": true
+      },
+      {
+        "key": "description",
+        "type": "textarea",
+        "label": "Descrição"
+      }
+    ],
+    "sort_order": 10
+  },
+  {
+    "module": "despesas",
+    "title": "Despesas",
+    "department_code": "financas",
+    "description": "Cadastro estruturado das despesas municipais",
+    "fields": [
+      {
+        "key": "supplier",
+        "type": "text",
+        "label": "Fornecedor / favorecido",
+        "required": true
+      },
+      {
+        "key": "document",
+        "type": "text",
+        "label": "CPF/CNPJ"
+      },
+      {
+        "key": "commitment",
+        "type": "text",
+        "label": "Empenho"
+      },
+      {
+        "key": "liquidation",
+        "type": "text",
+        "label": "Liquidação"
+      },
+      {
+        "key": "payment",
+        "type": "text",
+        "label": "Pagamento"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor",
+        "required": true
+      },
+      {
+        "key": "unit",
+        "type": "text",
+        "label": "Unidade responsável"
+      },
+      {
+        "key": "program",
+        "type": "text",
+        "label": "Programa / ação"
+      }
+    ],
+    "sort_order": 20
+  },
+  {
+    "module": "empenhos",
+    "title": "Empenhos",
+    "department_code": "financas",
+    "description": "Empenhos emitidos pelo município",
+    "fields": [
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Número do empenho",
+        "required": true
+      },
+      {
+        "key": "date",
+        "type": "date",
+        "label": "Data",
+        "required": true
+      },
+      {
+        "key": "supplier",
+        "type": "text",
+        "label": "Favorecido"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor"
+      },
+      {
+        "key": "object",
+        "type": "textarea",
+        "label": "Objeto"
+      }
+    ],
+    "sort_order": 30
+  },
+  {
+    "module": "pagamentos",
+    "title": "Pagamentos",
+    "department_code": "financas",
+    "description": "Pagamentos realizados pelo município",
+    "fields": [
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Número"
+      },
+      {
+        "key": "date",
+        "type": "date",
+        "label": "Data do pagamento",
+        "required": true
+      },
+      {
+        "key": "supplier",
+        "type": "text",
+        "label": "Favorecido"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor",
+        "required": true
+      },
+      {
+        "key": "commitment",
+        "type": "text",
+        "label": "Empenho relacionado"
+      }
+    ],
+    "sort_order": 40
+  },
+  {
+    "module": "transferencias",
+    "title": "Transferências",
+    "department_code": "financas",
+    "description": "Transferências financeiras recebidas e concedidas",
+    "fields": [
+      {
+        "key": "direction",
+        "type": "select",
+        "label": "Tipo",
+        "options": [
+          "Recebida",
+          "Concedida"
+        ]
+      },
+      {
+        "key": "origin",
+        "type": "text",
+        "label": "Origem / destino"
+      },
+      {
+        "key": "instrument",
+        "type": "text",
+        "label": "Instrumento"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor"
+      },
+      {
+        "key": "date",
+        "type": "date",
+        "label": "Data"
+      }
+    ],
+    "sort_order": 50
+  },
+  {
+    "module": "servidores_remuneracoes",
+    "title": "Servidores e Remunerações",
+    "department_code": "rh",
+    "description": "Informações públicas de pessoal e remuneração",
+    "fields": [
+      {
+        "key": "name",
+        "type": "text",
+        "label": "Servidor",
+        "required": true
+      },
+      {
+        "key": "position",
+        "type": "text",
+        "label": "Cargo"
+      },
+      {
+        "key": "department",
+        "type": "text",
+        "label": "Lotação"
+      },
+      {
+        "key": "competence",
+        "type": "month",
+        "label": "Competência"
+      },
+      {
+        "key": "gross",
+        "type": "currency",
+        "label": "Remuneração bruta"
+      },
+      {
+        "key": "net",
+        "type": "currency",
+        "label": "Remuneração líquida"
+      }
+    ],
+    "sort_order": 60
+  },
+  {
+    "module": "folha_pagamento",
+    "title": "Folha de Pagamento",
+    "department_code": "rh",
+    "description": "Folhas mensais consolidadas",
+    "fields": [
+      {
+        "key": "competence",
+        "type": "month",
+        "label": "Competência",
+        "required": true
+      },
+      {
+        "key": "payroll_type",
+        "type": "text",
+        "label": "Tipo da folha"
+      },
+      {
+        "key": "total",
+        "type": "currency",
+        "label": "Total da folha"
+      },
+      {
+        "key": "employees",
+        "type": "number",
+        "label": "Quantidade de servidores"
+      }
+    ],
+    "sort_order": 70
+  },
+  {
+    "module": "diarias",
+    "title": "Diárias",
+    "department_code": "rh",
+    "description": "Concessões de diárias",
+    "fields": [
+      {
+        "key": "beneficiary",
+        "type": "text",
+        "label": "Beneficiário",
+        "required": true
+      },
+      {
+        "key": "position",
+        "type": "text",
+        "label": "Cargo / função"
+      },
+      {
+        "key": "destination",
+        "type": "text",
+        "label": "Destino"
+      },
+      {
+        "key": "purpose",
+        "type": "textarea",
+        "label": "Finalidade"
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "label": "Saída"
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "label": "Retorno"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor"
+      }
+    ],
+    "sort_order": 80
+  },
+  {
+    "module": "licitacoes",
+    "title": "Licitações",
+    "department_code": "licitacoes",
+    "description": "Processos licitatórios",
+    "fields": [
+      {
+        "key": "process_number",
+        "type": "text",
+        "label": "Número do processo",
+        "required": true
+      },
+      {
+        "key": "modality",
+        "type": "text",
+        "label": "Modalidade"
+      },
+      {
+        "key": "object",
+        "type": "textarea",
+        "label": "Objeto",
+        "required": true
+      },
+      {
+        "key": "opening_date",
+        "type": "date",
+        "label": "Data de abertura"
+      },
+      {
+        "key": "status_detail",
+        "type": "text",
+        "label": "Situação"
+      }
+    ],
+    "sort_order": 90
+  },
+  {
+    "module": "contratos",
+    "title": "Contratos",
+    "department_code": "licitacoes",
+    "description": "Contratos administrativos",
+    "fields": [
+      {
+        "key": "contract_number",
+        "type": "text",
+        "label": "Número do contrato",
+        "required": true
+      },
+      {
+        "key": "supplier",
+        "type": "text",
+        "label": "Contratada",
+        "required": true
+      },
+      {
+        "key": "document",
+        "type": "text",
+        "label": "CNPJ/CPF"
+      },
+      {
+        "key": "object",
+        "type": "textarea",
+        "label": "Objeto",
+        "required": true
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor"
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "label": "Início da vigência"
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "label": "Fim da vigência"
+      },
+      {
+        "key": "process_number",
+        "type": "text",
+        "label": "Processo relacionado"
+      }
+    ],
+    "sort_order": 100
+  },
+  {
+    "module": "dispensas_inexigibilidades",
+    "title": "Dispensas e Inexigibilidades",
+    "department_code": "licitacoes",
+    "description": "Contratações diretas",
+    "fields": [
+      {
+        "key": "type",
+        "type": "select",
+        "label": "Tipo",
+        "options": [
+          "Dispensa",
+          "Inexigibilidade"
+        ]
+      },
+      {
+        "key": "process_number",
+        "type": "text",
+        "label": "Número do processo"
+      },
+      {
+        "key": "supplier",
+        "type": "text",
+        "label": "Contratada"
+      },
+      {
+        "key": "object",
+        "type": "textarea",
+        "label": "Objeto"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor"
+      }
+    ],
+    "sort_order": 110
+  },
+  {
+    "module": "fornecedores",
+    "title": "Fornecedores",
+    "department_code": "licitacoes",
+    "description": "Cadastro público de fornecedores relacionados a contratações",
+    "fields": [
+      {
+        "key": "name",
+        "type": "text",
+        "label": "Razão social / nome",
+        "required": true
+      },
+      {
+        "key": "document",
+        "type": "text",
+        "label": "CNPJ/CPF"
+      },
+      {
+        "key": "city",
+        "type": "text",
+        "label": "Município"
+      },
+      {
+        "key": "contracts",
+        "type": "textarea",
+        "label": "Contratos relacionados"
+      }
+    ],
+    "sort_order": 120
+  },
+  {
+    "module": "ppa",
+    "title": "PPA",
+    "department_code": "financas",
+    "description": "Plano Plurianual",
+    "fields": [
+      {
+        "key": "period",
+        "type": "text",
+        "label": "Período",
+        "required": true
+      },
+      {
+        "key": "law_number",
+        "type": "text",
+        "label": "Lei nº"
+      },
+      {
+        "key": "approval_date",
+        "type": "date",
+        "label": "Data de aprovação"
+      }
+    ],
+    "sort_order": 130
+  },
+  {
+    "module": "ldo",
+    "title": "LDO",
+    "department_code": "financas",
+    "description": "Lei de Diretrizes Orçamentárias",
+    "fields": [
+      {
+        "key": "exercise",
+        "type": "number",
+        "label": "Exercício",
+        "required": true
+      },
+      {
+        "key": "law_number",
+        "type": "text",
+        "label": "Lei nº"
+      },
+      {
+        "key": "approval_date",
+        "type": "date",
+        "label": "Data de aprovação"
+      }
+    ],
+    "sort_order": 140
+  },
+  {
+    "module": "loa",
+    "title": "LOA",
+    "department_code": "financas",
+    "description": "Lei Orçamentária Anual",
+    "fields": [
+      {
+        "key": "exercise",
+        "type": "number",
+        "label": "Exercício",
+        "required": true
+      },
+      {
+        "key": "law_number",
+        "type": "text",
+        "label": "Lei nº"
+      },
+      {
+        "key": "total_budget",
+        "type": "currency",
+        "label": "Orçamento total"
+      }
+    ],
+    "sort_order": 150
+  },
+  {
+    "module": "rreo",
+    "title": "RREO",
+    "department_code": "financas",
+    "description": "Relatório Resumido da Execução Orçamentária",
+    "fields": [
+      {
+        "key": "exercise",
+        "type": "number",
+        "label": "Exercício"
+      },
+      {
+        "key": "period",
+        "type": "text",
+        "label": "Bimestre",
+        "required": true
+      }
+    ],
+    "sort_order": 160
+  },
+  {
+    "module": "rgf",
+    "title": "RGF",
+    "department_code": "financas",
+    "description": "Relatório de Gestão Fiscal",
+    "fields": [
+      {
+        "key": "exercise",
+        "type": "number",
+        "label": "Exercício"
+      },
+      {
+        "key": "period",
+        "type": "text",
+        "label": "Quadrimestre / semestre",
+        "required": true
+      }
+    ],
+    "sort_order": 170
+  },
+  {
+    "module": "prestacao_contas",
+    "title": "Prestação de Contas",
+    "department_code": "controle_interno",
+    "description": "Prestações de contas anuais e documentos correlatos",
+    "fields": [
+      {
+        "key": "exercise",
+        "type": "number",
+        "label": "Exercício",
+        "required": true
+      },
+      {
+        "key": "type",
+        "type": "text",
+        "label": "Tipo"
+      },
+      {
+        "key": "submitted_at",
+        "type": "date",
+        "label": "Data de envio"
+      }
+    ],
+    "sort_order": 180
+  },
+  {
+    "module": "convenios",
+    "title": "Convênios",
+    "department_code": "convenios_emendas",
+    "description": "Convênios firmados",
+    "fields": [
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Número"
+      },
+      {
+        "key": "partner",
+        "type": "text",
+        "label": "Órgão / entidade"
+      },
+      {
+        "key": "object",
+        "type": "textarea",
+        "label": "Objeto"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor"
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "label": "Início"
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "label": "Fim"
+      }
+    ],
+    "sort_order": 190
+  },
+  {
+    "module": "emendas",
+    "title": "Emendas Parlamentares",
+    "department_code": "convenios_emendas",
+    "description": "Emendas destinadas ao município",
+    "fields": [
+      {
+        "key": "author",
+        "type": "text",
+        "label": "Autor da emenda"
+      },
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Número / identificação"
+      },
+      {
+        "key": "object",
+        "type": "textarea",
+        "label": "Objeto"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor"
+      },
+      {
+        "key": "status_detail",
+        "type": "text",
+        "label": "Situação"
+      }
+    ],
+    "sort_order": 200
+  },
+  {
+    "module": "obras_publicas",
+    "title": "Obras Públicas",
+    "department_code": "obras",
+    "description": "Cadastro e acompanhamento de obras",
+    "fields": [
+      {
+        "key": "name",
+        "type": "text",
+        "label": "Nome da obra",
+        "required": true
+      },
+      {
+        "key": "location",
+        "type": "text",
+        "label": "Local"
+      },
+      {
+        "key": "contractor",
+        "type": "text",
+        "label": "Empresa executora"
+      },
+      {
+        "key": "amount",
+        "type": "currency",
+        "label": "Valor"
+      },
+      {
+        "key": "start_date",
+        "type": "date",
+        "label": "Início"
+      },
+      {
+        "key": "end_date",
+        "type": "date",
+        "label": "Previsão de conclusão"
+      },
+      {
+        "key": "progress",
+        "type": "number",
+        "label": "Percentual executado"
+      },
+      {
+        "key": "status_detail",
+        "type": "text",
+        "label": "Situação"
+      }
+    ],
+    "sort_order": 210
+  },
+  {
+    "module": "patrimonio",
+    "title": "Patrimônio",
+    "department_code": "patrimonio_frota",
+    "description": "Bens patrimoniais de divulgação pública",
+    "fields": [
+      {
+        "key": "asset_number",
+        "type": "text",
+        "label": "Tombamento"
+      },
+      {
+        "key": "description",
+        "type": "textarea",
+        "label": "Bem",
+        "required": true
+      },
+      {
+        "key": "unit",
+        "type": "text",
+        "label": "Unidade responsável"
+      },
+      {
+        "key": "status_detail",
+        "type": "text",
+        "label": "Situação"
+      }
+    ],
+    "sort_order": 220
+  },
+  {
+    "module": "frota",
+    "title": "Frota",
+    "department_code": "patrimonio_frota",
+    "description": "Veículos e máquinas municipais",
+    "fields": [
+      {
+        "key": "vehicle",
+        "type": "text",
+        "label": "Veículo / máquina",
+        "required": true
+      },
+      {
+        "key": "plate",
+        "type": "text",
+        "label": "Placa"
+      },
+      {
+        "key": "year",
+        "type": "number",
+        "label": "Ano"
+      },
+      {
+        "key": "unit",
+        "type": "text",
+        "label": "Setor responsável"
+      },
+      {
+        "key": "status_detail",
+        "type": "text",
+        "label": "Situação"
+      }
+    ],
+    "sort_order": 230
+  },
+  {
+    "module": "leis",
+    "title": "Leis Municipais",
+    "department_code": "juridico",
+    "description": "Leis municipais",
+    "fields": [
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Número da lei",
+        "required": true
+      },
+      {
+        "key": "date",
+        "type": "date",
+        "label": "Data"
+      },
+      {
+        "key": "ementa",
+        "type": "textarea",
+        "label": "Ementa",
+        "required": true
+      }
+    ],
+    "sort_order": 240
+  },
+  {
+    "module": "decretos",
+    "title": "Decretos",
+    "department_code": "juridico",
+    "description": "Decretos municipais",
+    "fields": [
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Número",
+        "required": true
+      },
+      {
+        "key": "date",
+        "type": "date",
+        "label": "Data"
+      },
+      {
+        "key": "ementa",
+        "type": "textarea",
+        "label": "Ementa"
+      }
+    ],
+    "sort_order": 250
+  },
+  {
+    "module": "portarias",
+    "title": "Portarias",
+    "department_code": "juridico",
+    "description": "Portarias municipais",
+    "fields": [
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Número",
+        "required": true
+      },
+      {
+        "key": "date",
+        "type": "date",
+        "label": "Data"
+      },
+      {
+        "key": "ementa",
+        "type": "textarea",
+        "label": "Ementa"
+      }
+    ],
+    "sort_order": 260
+  },
+  {
+    "module": "diario_oficial",
+    "title": "Diário Oficial",
+    "department_code": "administracao",
+    "description": "Edições do Diário Oficial",
+    "fields": [
+      {
+        "key": "edition",
+        "type": "text",
+        "label": "Edição",
+        "required": true
+      },
+      {
+        "key": "date",
+        "type": "date",
+        "label": "Data da edição",
+        "required": true
+      }
+    ],
+    "sort_order": 270
+  },
+  {
+    "module": "editais",
+    "title": "Editais",
+    "department_code": "administracao",
+    "description": "Editais diversos",
+    "fields": [
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Número"
+      },
+      {
+        "key": "type",
+        "type": "text",
+        "label": "Tipo"
+      },
+      {
+        "key": "date",
+        "type": "date",
+        "label": "Data"
+      },
+      {
+        "key": "object",
+        "type": "textarea",
+        "label": "Objeto / assunto"
+      }
+    ],
+    "sort_order": 280
+  },
+  {
+    "module": "concursos_selecoes",
+    "title": "Concursos e Seleções",
+    "department_code": "administracao",
+    "description": "Concursos e processos seletivos",
+    "fields": [
+      {
+        "key": "type",
+        "type": "select",
+        "label": "Tipo",
+        "options": [
+          "Concurso",
+          "Seleção simplificada"
+        ]
+      },
+      {
+        "key": "number",
+        "type": "text",
+        "label": "Edital nº"
+      },
+      {
+        "key": "opening_date",
+        "type": "date",
+        "label": "Abertura"
+      },
+      {
+        "key": "closing_date",
+        "type": "date",
+        "label": "Encerramento"
+      },
+      {
+        "key": "status_detail",
+        "type": "text",
+        "label": "Situação"
+      }
+    ],
+    "sort_order": 290
+  },
+  {
+    "module": "esic",
+    "title": "LAI / e-SIC",
+    "department_code": "ouvidoria_lai",
+    "description": "Pedidos de acesso à informação",
+    "fields": [
+      {
+        "key": "protocol",
+        "type": "text",
+        "label": "Protocolo"
+      },
+      {
+        "key": "subject",
+        "type": "text",
+        "label": "Assunto"
+      },
+      {
+        "key": "status_detail",
+        "type": "text",
+        "label": "Situação"
+      },
+      {
+        "key": "deadline",
+        "type": "date",
+        "label": "Prazo"
+      }
+    ],
+    "sort_order": 300
+  },
+  {
+    "module": "educacao",
+    "title": "Educação",
+    "department_code": "educacao",
+    "description": "Conteúdos e documentos da Secretaria de Educação",
+    "fields": [
+      {
+        "key": "conteudo",
+        "type": "textarea",
+        "label": "Informações oficiais",
+        "required": true
+      },
+      {
+        "key": "referencia",
+        "type": "text",
+        "label": "Número ou referência"
+      },
+      {
+        "key": "data",
+        "type": "date",
+        "label": "Data de referência"
+      }
+    ],
+    "sort_order": 310
+  },
+  {
+    "module": "ouvidoria",
+    "title": "Ouvidoria",
+    "department_code": "ouvidoria_lai",
+    "description": "Manifestações da ouvidoria",
+    "fields": [
+      {
+        "key": "protocol",
+        "type": "text",
+        "label": "Protocolo"
+      },
+      {
+        "key": "type",
+        "type": "select",
+        "label": "Tipo",
+        "options": [
+          "Reclamação",
+          "Solicitação",
+          "Sugestão",
+          "Elogio",
+          "Denúncia"
+        ]
+      },
+      {
+        "key": "subject",
+        "type": "text",
+        "label": "Assunto"
+      },
+      {
+        "key": "status_detail",
+        "type": "text",
+        "label": "Situação"
+      },
+      {
+        "key": "deadline",
+        "type": "date",
+        "label": "Prazo"
+      }
+    ],
+    "sort_order": 310
+  },
+  {
+    "module": "carta_servicos",
+    "title": "Carta de Serviços",
+    "department_code": "administracao",
+    "description": "Serviços oferecidos ao cidadão",
+    "fields": [
+      {
+        "key": "service_name",
+        "type": "text",
+        "label": "Nome do serviço",
+        "required": true
+      },
+      {
+        "key": "description",
+        "type": "textarea",
+        "label": "Descrição"
+      },
+      {
+        "key": "requirements",
+        "type": "textarea",
+        "label": "Requisitos"
+      },
+      {
+        "key": "steps",
+        "type": "textarea",
+        "label": "Como solicitar"
+      },
+      {
+        "key": "deadline",
+        "type": "text",
+        "label": "Prazo de atendimento"
+      },
+      {
+        "key": "contact",
+        "type": "text",
+        "label": "Contato"
+      }
+    ],
+    "sort_order": 320
+  },
+  {
+    "module": "saude",
+    "title": "Saúde",
+    "department_code": "saude",
+    "description": "Conteúdos e documentos da Secretaria de Saúde",
+    "fields": [
+      {
+        "key": "conteudo",
+        "type": "textarea",
+        "label": "Informações oficiais",
+        "required": true
+      },
+      {
+        "key": "referencia",
+        "type": "text",
+        "label": "Número ou referência"
+      },
+      {
+        "key": "data",
+        "type": "date",
+        "label": "Data de referência"
+      }
+    ],
+    "sort_order": 320
+  },
+  {
+    "module": "assistencia",
+    "title": "Assistência Social",
+    "department_code": "assistencia",
+    "description": "Conteúdos e documentos da Assistência Social",
+    "fields": [
+      {
+        "key": "conteudo",
+        "type": "textarea",
+        "label": "Informações oficiais",
+        "required": true
+      },
+      {
+        "key": "referencia",
+        "type": "text",
+        "label": "Número ou referência"
+      },
+      {
+        "key": "data",
+        "type": "date",
+        "label": "Data de referência"
+      }
+    ],
+    "sort_order": 330
+  },
+  {
+    "module": "lgpd",
+    "title": "LGPD",
+    "department_code": "administracao",
+    "description": "Informações de proteção de dados",
+    "fields": [
+      {
+        "key": "topic",
+        "type": "text",
+        "label": "Assunto",
+        "required": true
+      },
+      {
+        "key": "content",
+        "type": "textarea",
+        "label": "Conteúdo"
+      },
+      {
+        "key": "contact",
+        "type": "text",
+        "label": "Canal do encarregado"
+      }
+    ],
+    "sort_order": 330
+  },
+  {
+    "module": "agricultura",
+    "title": "Agricultura",
+    "department_code": "agricultura",
+    "description": "Conteúdos e documentos da Agricultura",
+    "fields": [
+      {
+        "key": "conteudo",
+        "type": "textarea",
+        "label": "Informações oficiais",
+        "required": true
+      },
+      {
+        "key": "referencia",
+        "type": "text",
+        "label": "Número ou referência"
+      },
+      {
+        "key": "data",
+        "type": "date",
+        "label": "Data de referência"
+      }
+    ],
+    "sort_order": 340
+  },
+  {
+    "module": "controle_interno",
+    "title": "Controle Interno",
+    "department_code": "controle_interno",
+    "description": "Informações do controle interno",
+    "fields": [
+      {
+        "key": "type",
+        "type": "text",
+        "label": "Tipo de informação"
+      },
+      {
+        "key": "period",
+        "type": "text",
+        "label": "Período"
+      },
+      {
+        "key": "description",
+        "type": "textarea",
+        "label": "Descrição"
+      }
+    ],
+    "sort_order": 340
+  },
+  {
+    "module": "auditorias",
+    "title": "Auditorias",
+    "department_code": "controle_interno",
+    "description": "Auditorias realizadas",
+    "fields": [
+      {
+        "key": "title",
+        "type": "text",
+        "label": "Auditoria",
+        "required": true
+      },
+      {
+        "key": "period",
+        "type": "text",
+        "label": "Período"
+      },
+      {
+        "key": "scope",
+        "type": "textarea",
+        "label": "Escopo"
+      },
+      {
+        "key": "result",
+        "type": "textarea",
+        "label": "Resultado / conclusão"
+      }
+    ],
+    "sort_order": 350
+  },
+  {
+    "module": "esportes",
+    "title": "Esporte",
+    "department_code": "esportes",
+    "description": "Conteúdos e documentos do Esporte",
+    "fields": [
+      {
+        "key": "conteudo",
+        "type": "textarea",
+        "label": "Informações oficiais",
+        "required": true
+      },
+      {
+        "key": "referencia",
+        "type": "text",
+        "label": "Número ou referência"
+      },
+      {
+        "key": "data",
+        "type": "date",
+        "label": "Data de referência"
+      }
+    ],
+    "sort_order": 350
+  },
+  {
+    "module": "dados_abertos",
+    "title": "Dados Abertos",
+    "department_code": "controle_interno",
+    "description": "Conjuntos de dados públicos",
+    "fields": [
+      {
+        "key": "dataset",
+        "type": "text",
+        "label": "Conjunto de dados",
+        "required": true
+      },
+      {
+        "key": "format",
+        "type": "text",
+        "label": "Formato"
+      },
+      {
+        "key": "periodicity",
+        "type": "text",
+        "label": "Periodicidade"
+      },
+      {
+        "key": "description",
+        "type": "textarea",
+        "label": "Descrição"
+      }
+    ],
+    "sort_order": 360
+  },
+  {
+    "module": "transportes",
+    "title": "Transportes",
+    "department_code": "transportes",
+    "description": "Conteúdos e documentos do setor de Transportes",
+    "fields": [
+      {
+        "key": "conteudo",
+        "type": "textarea",
+        "label": "Informações oficiais",
+        "required": true
+      },
+      {
+        "key": "referencia",
+        "type": "text",
+        "label": "Número ou referência"
+      },
+      {
+        "key": "data",
+        "type": "date",
+        "label": "Data de referência"
+      }
+    ],
+    "sort_order": 360
+  }
+]
