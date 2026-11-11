@@ -140,6 +140,19 @@
   });
   // === CONTEUDO OFICIAL MANARI V1.1 - FIM ===
 
+  // Recursos Humanos usa exatamente o template institucional das demais secretarias.
+  departments.push({
+    id:'rh',name:'Recursos Humanos',icon:departments.find(d=>d.id==='administracao').icon,
+    hero:'rh/hero.svg',
+    headline:'Recursos humanos para valorizar quem cuida de Manari.',
+    intro:'O Recursos Humanos atende os servidores municipais, oferece orientações funcionais, publica comunicados e disponibiliza documentos públicos de interesse dos trabalhadores da Prefeitura.',
+    badge:'Valorização do servidor',
+    values:[['♧','Atendimento ao servidor'],['▣','Informações oficiais'],['✓','Valorização profissional'],['●','Compromisso com as pessoas']],
+    services:[['Meu Contracheque','Acesse o Município Online para consultar seu demonstrativo de pagamento.'],['Notícias e Comunicados','Acompanhe as informações publicadas pelo Recursos Humanos.'],['Documentos do RH','Consulte orientações, formulários e documentos públicos do setor.'],['Atendimento ao Servidor','Informações e serviços de atendimento do RH.'],['Gestão do RH','Área administrativa para o responsável atualizar imagens, notícias e documentos.']],
+    stats:[['Atendimento','Servidores municipais'],['Documentos','Informações públicas'],['Comunicação','Notícias do RH']],
+    programs:['Atendimento ao Servidor','Notícias e Comunicados','Documentos Públicos','Valorização Profissional']
+  });
+  
   const extraChips = [
     {id:'transportes',name:'Transportes',icon:departments.find(d=>d.id==='infraestrutura').icon},
     {id:'controle',name:'Controle Interno',icon:departments.find(d=>d.id==='administracao').icon},
