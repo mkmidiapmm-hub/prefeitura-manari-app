@@ -1,0 +1,20 @@
+/* Complementos da GCMM: preservam o cabeçalho, o menu e o tema do portal. */
+.security-page .security-hero{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+.security-page .security-emblem{background:#fff;min-height:540px}
+.security-page .security-emblem img{object-fit:contain!important;padding:18px}
+.security-page .security-whatsapp{display:inline-flex;align-items:center;text-decoration:none;background:linear-gradient(110deg,#124a86,#1766ab);box-shadow:0 7px 20px #16518b26;line-height:1.4;max-width:100%}
+.security-page .kicker{line-height:1.4}
+.security-page .kicker img{height:44px;flex:0 0 32px}
+.security-page .security-contacts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.security-page .service-card>div:last-child{min-width:0}
+.security-page .service-icon svg{width:32px;height:32px}
+.security-page .security-contact{display:block;margin-top:7px;color:var(--green);font-size:clamp(17px,1.6vw,23px);font-weight:800;text-decoration:none;overflow-wrap:anywhere}
+.security-page a.security-contact:hover,.security-page a.security-contact:focus-visible{text-decoration:underline}
+.security-page .security-info{grid-column:1/-1;min-height:140px}
+.security-page .security-info>div:last-child{flex:1}
+.security-page .security-location{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:14px;margin-top:18px;font-weight:750;color:var(--green)}
+.security-page .security-location svg{width:25px;height:25px;flex:0 0 25px}
+.security-shortcut{margin-top:14px;min-height:120px;align-items:center}
+.security-shortcut>img{object-fit:contain;flex:0 0 48px}
+@media(max-width:1200px){.security-page .security-hero{grid-template-columns:1fr!important}.security-page .security-emblem{min-height:420px}}
+@media(max-width:900px){.security-page .security-contacts{grid-template-columns:1fr!important}.security-page .security-emblem{aspect-ratio:4/5!important;min-height:0!important;max-height:540px}.security-page .security-emblem img{padding:12px}.security-page .security-whatsapp{font-size:14px;padding:12px 15px}.security-page .service-card{padding:16px;gap:10px}.security-page .service-icon{width:40px;height:40px;flex-basis:40px}.security-page .service-icon svg{width:26px;height:26px}.security-page .security-info .security-contact{font-size:16px}}
