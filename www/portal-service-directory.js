@@ -13,7 +13,7 @@
  const portalBase=root.document.currentScript?.src?new URL('./index.html',root.document.currentScript.src).href:root.location.href;
  // Window capture takes precedence over older document-level service handlers.
  root.addEventListener('click',e=>{
-  const el=e.target.closest('[data-service],[data-service-url],[data-nav],.sm-quick-card[data-url],a[href]');if(!el)return;
+  const el=e.target.closest('[data-service],[data-service-url],[data-nav],.sm-quick-card[data-url],a[href]');if(!el)return;if(el.getAttribute('data-sector-request')!==null)return;
   const href=el.getAttribute('href')||el.getAttribute('data-service-url')||el.getAttribute('data-url')||'';
   const nav=el.getAttribute('data-nav')||'';const label=el.getAttribute('data-service')||el.querySelector('b')?.textContent||el.textContent.trim();
   let value=el.getAttribute('data-service')||(['esic','ouvidoria','servidor','contracheque','transparencia','transparencia-central'].includes(nav)?nav.replace('-central',''):null);

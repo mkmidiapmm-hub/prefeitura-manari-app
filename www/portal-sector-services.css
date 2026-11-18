@@ -1,0 +1,36 @@
+/* Somente os atalhos e as publicações das páginas setoriais. */
+.dept-services{container-type:inline-size}
+.dept-services .sector-service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px}
+.sector-service-tile{box-sizing:border-box;min-width:0;min-height:122px;border:1px solid #dce5e9;border-radius:18px;background:#fff;box-shadow:0 3px 9px rgba(7,45,75,.06);padding:14px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;text-decoration:none;color:var(--ink,#12324b);font:inherit;cursor:pointer}
+.sector-service-tile:hover{border-color:#81aa85;background:#f9fcf9}
+.sector-service-tile:focus-visible{outline:3px solid #145c88;outline-offset:3px}
+.sector-service-icon{display:grid;place-items:center;color:#439b18;width:38px;height:38px}
+.sector-service-icon svg{width:100%;height:100%}
+.sector-service-title{font-size:clamp(12px,1.2vw,16px);font-weight:800;line-height:1.2;overflow-wrap:break-word}
+.sector-service-action{font-size:clamp(10px,1vw,12px);font-weight:700;line-height:1.3;color:#08612e}
+@container(min-width:560px){.dept-services .sector-service-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@container(min-width:1050px){.dept-services .sector-service-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important}}
+.sector-feed{min-width:0;margin:22px auto;max-width:760px;color:var(--mf-ink,#183d4b)}
+.sector-feed-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.sector-feed-heading h2{font-size:clamp(18px,2vw,24px);line-height:1.25;margin:0}
+.sector-feed-heading p{font-size:13px;color:#60756c;margin:6px 0 0}
+.sector-feed-list{display:grid;gap:16px;min-width:0}
+.sector-feed .mf-post{min-width:0;margin:0;overflow:hidden;background:#fff;border:1px solid #dce5e9;border-radius:18px;box-shadow:0 3px 9px rgba(7,45,75,.06)}
+.sector-feed .mf-post>header{padding:14px;display:flex;align-items:center;gap:10px}
+.sector-feed .mf-post>header>div{min-width:0;overflow-wrap:anywhere}
+.sector-feed .mf-post>header small{display:block;margin-top:4px}
+.sector-feed .mf-media,.sector-feed video{display:block;width:100%;max-height:600px;height:auto;object-fit:contain;background:#f2f6f3}
+.sector-feed .mf-copy{padding:14px}
+.sector-feed .mf-copy h2{font-size:20px;line-height:1.25;margin:0 0 8px}
+.sector-feed .mf-copy p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6}
+.sector-feed .mf-post footer{display:flex;gap:8px;padding:12px 14px;border-top:1px solid #edf1ed}
+.sector-feed .mf-post footer button{flex:1;border:0;border-radius:8px;background:#f1f7f2;color:#17653d;padding:10px 5px;font:inherit;font-size:12px;cursor:pointer}
+.sector-feed-more{display:block;margin:18px auto}
+.sector-feed-more[hidden]{display:none}
+.page-wrap[data-swipe-route] .action-band .stat{min-width:0}
+.page-wrap[data-swipe-route] .action-band .stat strong{font-size:clamp(15px,1.6vw,23px);line-height:1.3;overflow-wrap:anywhere}
+.page-wrap[data-swipe-route] .action-band h2{font-size:clamp(18px,2vw,25px)}
+@media(max-width:900px){.page-wrap[data-swipe-route] .action-band{gap:0}.page-wrap[data-swipe-route] .action-band>div{padding:14px 16px}.page-wrap[data-swipe-route] .action-band .stat{display:flex;flex-direction:row-reverse;justify-content:space-between;align-items:center;gap:12px;padding:8px 16px;border-top:1px solid #ffffff25}.page-wrap[data-swipe-route] .action-band .stat strong{font-size:13px;text-align:right}.page-wrap[data-swipe-route] .action-band .stat span{font-size:11px;flex-shrink:0}}
+.sector-feed .mf-empty{margin:0;border:1px solid #dce5e9;border-radius:16px;background:#fff;padding:20px;line-height:1.5}
+.sector-feed .mf-empty button{display:block;margin:12px auto 0}
+@media(max-width:520px){.dept-services .sector-service-grid{gap:8px}.sector-service-tile{min-height:116px;padding:12px 5px;border-radius:14px}.sector-service-icon{width:30px;height:30px}.sector-feed-heading{align-items:flex-start;flex-wrap:wrap}.sector-feed-heading .mf-secondary{font-size:11px;padding:8px 10px}.sector-feed .mf-post>header{padding:10px;font-size:12px}.sector-feed .mf-copy{padding:12px}.sector-feed .mf-copy h2{font-size:17px}.sector-feed .mf-copy p{font-size:13px}}
