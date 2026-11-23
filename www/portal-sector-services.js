@@ -29,6 +29,7 @@
     return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;
   }
   function destination(title, department, base) {
+    if(department==='saude' && norm(title)==='unidades de saude (ubs)'){const url=new URL('./',base);url.hash='saude-unidades';return {url:url.href,action:'Ver unidades',symbol:'health'};}
     const education = {'Matrícula Escolar':['matricula','Solicitar pré-matrícula','education'],'Transporte Escolar':['transporte','Solicitar transporte','route'],'Merenda e Alimentação':['alimentacao','Cardápio e atendimento','service'],'Infraestrutura Escolar':['infraestrutura','Informar problema','building'],'Eventos Culturais':['eventos','Ver agenda e inscrições','people'],'Notícias da Prefeitura':['noticias','Acompanhar Educação','document']};
     if(department === 'educacao' && education[title]){const [service,action,symbol]=education[title],url=new URL('./educacao/',base);url.searchParams.set('servico',service);return {url:url.href,action,symbol};}
     const match = department === 'infraestrutura' && maintenance[title];

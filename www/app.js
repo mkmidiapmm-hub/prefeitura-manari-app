@@ -283,14 +283,16 @@
     if(['gcm','gcmm','cgm','seguranca-e-protecao'].includes(route)) route='seguranca';
     if(route==='ouvidoria'){window.location.assign(new URL('./ouvidoria/',window.location.href).href);return}
     currentRoute=route;
-    const d=departments.find(x=>x.id===route);
-    main.innerHTML = route==='home' ? homeTemplate() : d ? departmentTemplate(d) : genericArea(route);
+    const unitsRoute=route==='saude-unidades';
+    const d=departments.find(x=>x.id===(unitsRoute?'saude':route));
+    main.innerHTML = unitsRoute ? window.ManariHealthUnits.template(d,strip(d.id),serviceCards(d.services,d.id)) : route==='home' ? homeTemplate() : d ? departmentTemplate(d) : genericArea(route);
     if(route==='seguranca'){main.querySelector('.security-page')?.insertAdjacentHTML('beforeend',window.ManariSectorServices.feed(route,d.name))}
     window.ManariFeed?.renderSector();
     document.querySelectorAll('[data-route="home"]').forEach(b=>b.classList.toggle('active',route==='home'));
     document.querySelectorAll('.menu-link').forEach(b=>b.classList.remove('active'));
     if(route==='home') document.querySelector('.menu-link[data-route="home"]')?.classList.add('active');
     bindDynamic();
+    if(unitsRoute)void window.ManariHealthUnits.mount(main);
     const restoreScroll=()=>{if(!preservedScroll)return;window.scrollTo({top:preservedScroll.top,left:0,behavior:'auto'});const strip=document.querySelector('.secretaria-strip');if(strip)strip.scrollLeft=preservedScroll.left};
     restoreScroll();await hydrateImages();restoreScroll();
     if(push) history.pushState({route},'',route==='home'?'#inicio':'#'+route);
@@ -298,6 +300,7 @@
   }
 
   function bindDynamic(){
+    document.querySelectorAll('a[data-sector-request]').forEach(link=>{if(new URL(link.href).hash==='#saude-unidades')link.addEventListener('click',event=>{event.preventDefault();render('saude-unidades')})});
     document.querySelectorAll('[data-dept]').forEach(btn=>btn.addEventListener('click',()=>{if(btn.classList.contains('secretaria-chip')){const strip=btn.closest('.secretaria-strip');render(btn.dataset.dept,true,{top:window.scrollY,left:strip?.scrollLeft||0})}else render(btn.dataset.dept)}));
     document.querySelectorAll('[data-news-id]').forEach(btn=>btn.addEventListener('click',()=>openNews(appNews.find(n=>String(n.id)===decodeURIComponent(btn.dataset.newsId)))));
     document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>handleService(btn.dataset.service)));
