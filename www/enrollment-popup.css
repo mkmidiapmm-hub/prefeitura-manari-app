@@ -1,0 +1,13 @@
+/* Componente independente. A referência fornecida é preservada integralmente. */
+html.m27-scroll-locked{overflow:hidden}
+#manari-enrollment-2027{box-sizing:border-box;width:min(680px,calc(100vw - 12px),calc((100vh - 12px)*1454/1536));width:min(680px,calc(100vw - 12px),calc((100dvh - 12px)*1454/1536));max-width:calc(100vw - 12px);max-height:calc(100vh - 12px);max-height:calc(100dvh - 12px);padding:0;border:0;background:transparent;color:#fff;overflow:visible;margin:auto;font-family:inherit}
+#manari-enrollment-2027:not([open]){display:none}
+#manari-enrollment-2027::backdrop{background:rgba(11,28,44,.56)}
+#manari-enrollment-2027 .m27-art-scroll{position:relative;width:100%;clip-path:inset(4.3% 4.5% 5% round 4%);border-radius:24px}
+#manari-enrollment-2027 .m27-art{display:block;width:100%;height:auto;object-fit:contain}
+#manari-enrollment-2027 .m27-close{position:absolute;top:5.8%;right:7.1%;width:7.4%;aspect-ratio:1;min-width:44px;min-height:44px;padding:0;border:0;border-radius:50%;background:transparent;cursor:pointer}
+#manari-enrollment-2027 .m27-details{position:absolute;left:15.5%;right:15.5%;top:68.4%;height:10.2%;min-height:44px;display:block;border-radius:999px;background:transparent;color:inherit;cursor:pointer}
+#manari-enrollment-2027 :is(button,a):focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px #073e8a}
+#manari-enrollment-2027 .m27-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.m27-fallback-backdrop{position:fixed;inset:0;background:rgba(11,28,44,.56);z-index:2147483646}
+#manari-enrollment-2027.m27-fallback{position:fixed;inset:0;z-index:2147483647;height:fit-content}

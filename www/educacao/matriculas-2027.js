@@ -1,0 +1,2 @@
+/* Informações públicas na área de matrícula existente; sem alterar autenticação ou pedidos. */
+(function(){'use strict';const panel=document.getElementById('matriculas-2027');if(!panel)return;function update(){const service=new URLSearchParams(location.search).get('servico');panel.hidden=!!service&&service!=='matricula';}update();window.addEventListener('popstate',update);document.addEventListener('click',()=>requestAnimationFrame(update));})();
