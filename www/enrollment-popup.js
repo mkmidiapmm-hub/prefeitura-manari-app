@@ -7,7 +7,7 @@
     return ['','#','#inicio','#home'].includes(hash)&&!params.has('post')&&!params.has('portal_invite')&&!!document.querySelector('#mainView .home-hero')&&!document.body.classList.contains('manari-feed-home');
   }
   function create(window,document,scriptUrl){
-    const base=new URL('./',scriptUrl),education=new URL('educacao/?servico=matricula#matriculas-2027',base);
+    const base=new URL('./',scriptUrl),education=new URL('educacao/?servico=matricula',base);
     let seen=false,preparing=false,ready=false,failed=false,dialog=null,observer=null,previousFocus=null,framePending=false,backdrop=null;
     try{seen=window.sessionStorage.getItem(KEY)==='1'}catch{}
     function consumed(){if(seen)return true;try{return window.sessionStorage.getItem(KEY)==='1'}catch{return false}}
