@@ -6,11 +6,17 @@
   <meta name="theme-color" content="#073a22">
   <meta name="description" content="Aplicativo oficial da Prefeitura Municipal de Manari - serviços, secretarias, notícias e atendimento ao cidadão.">
   <title>Prefeitura de Manari</title>
+  <link rel="canonical" href="https://www.manari.pe.gov.br/">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/png" sizes="192x192" href="/app-icon-192.png">
   <link rel="apple-touch-icon" href="/app-icon-192.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="security-portal.css?v=6.30">
+  <style>
+    .citizen-shortcuts{flex:1 1 220px;min-width:0}
+    .citizen-shortcuts a{color:inherit;text-decoration:underline;text-underline-offset:3px;line-height:1.6}
+    .citizen-shortcuts a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+  </style>
 </head>
 <body>
   <div id="app" class="app-shell">
@@ -42,8 +48,17 @@
         <strong>Atendimento ao cidadão</strong>
         <span>Segunda a sexta-feira • 7h às 13h • 0800-666-9090</span>
       </div>
+      <nav class="footer-col citizen-shortcuts" aria-label="Serviços ao cidadão">
+        <strong>Serviços ao cidadão</strong>
+        <a href="/ouvidoria/">Ouvidoria</a>
+        <a href="/esic/">e-SIC — Acesso à informação</a>
+        <a href="/transparencia/">Portal da Transparência</a>
+        <a href="/transparencia/?q=licita%C3%A7%C3%B5es">Licitações e contratos</a>
+        <a href="/educacao/">Serviços da Educação</a>
+        <a href="/rh/">RH e contracheque</a>
+      </nav>
       <div class="footer-col footer-actions">
-        <button id="mediaManagerBtn" class="footer-btn">⚙ Gerenciar imagens</button>
+        <button id="mediaManagerBtn" class="footer-btn" data-nosnippet>⚙ Acesso administrativo</button>
         <button id="installFooterBtn" class="footer-btn">＋ Instalar aplicativo</button>
       </div>
     </footer>
@@ -58,7 +73,7 @@
 
   <div id="toast" class="toast" role="status"></div>
 
-  <div id="adminModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+  <div id="adminModal" data-nosnippet class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
     <div class="modal-card admin-modal-card">
       <div class="modal-head">
         <div>

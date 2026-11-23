@@ -1,0 +1,7 @@
+# Endereços confirmados do portal antigo, substituídos pelo atendimento atual.
+/v1/fc_dir /ouvidoria/ 301
+/v1/fc_dir/ /ouvidoria/ 301
+/v1/fc_dir/indice-de-transparencia /transparencia/ 301
+/v1/fc_dir/indice-de-transparencia/ /transparencia/ 301
+/v1 / 301
+/v1/ / 301
