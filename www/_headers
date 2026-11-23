@@ -1,16 +1,14 @@
-# Páginas públicas com endereço canônico consistente em ambos os hostnames.
+# Páginas públicas em destaque.
 /
   Link: <https://www.manari.pe.gov.br/>; rel="canonical"
+/localizacao
+  Link: <https://www.manari.pe.gov.br/localizacao>; rel="canonical"
 /ouvidoria/
   Link: <https://www.manari.pe.gov.br/ouvidoria/>; rel="canonical"
-/esic/
-  Link: <https://www.manari.pe.gov.br/esic/>; rel="canonical"
+/noticias
+  Link: <https://www.manari.pe.gov.br/noticias>; rel="canonical"
 /transparencia/
   Link: <https://www.manari.pe.gov.br/transparencia/>; rel="canonical"
-/educacao/
-  Link: <https://www.manari.pe.gov.br/educacao/>; rel="canonical"
-/rh/
-  Link: <https://www.manari.pe.gov.br/rh/>; rel="canonical"
 
 # Áreas de trabalho e páginas desativadas não são atalhos públicos de busca.
 /gestao-demandas/*
