@@ -1,0 +1,20 @@
+.climate-notice{display:flex;align-items:center;gap:18px;margin:0 0 22px;padding:22px 24px;border:1px solid #efd89d;border-left:5px solid #e5a519;border-radius:18px;background:#fff9e9;color:#103c52;box-shadow:0 5px 18px #103c5208;font-family:inherit}
+.climate-notice *{box-sizing:border-box}
+.climate-notice-icon{flex:0 0 52px;width:52px;height:62px;display:grid;place-items:center;border-radius:15px;background:#ffefc5;color:#91600b}
+.climate-notice-icon svg{width:40px;height:44px}
+.climate-notice-copy{flex:1;min-width:0}
+.climate-notice-label{font-size:10px;font-weight:800;letter-spacing:1.1px;color:#7b580e}
+.climate-notice h2{margin:6px 0 8px;font-size:clamp(18px,1.7vw,24px);line-height:1.25;font-weight:800;color:#103c52}
+.climate-notice p{margin:0;font-size:14px;line-height:1.55}
+.climate-notice p.climate-notice-validity{margin-top:6px;font-size:12px;color:#645a43}
+.climate-notice-actions{flex:0 1 260px;display:flex;flex-direction:column;align-items:stretch;gap:8px;min-width:210px}
+.climate-notice a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 14px;border-radius:11px;text-align:center;line-height:1.4;font-size:13px;font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+.climate-notice-primary{background:#145b87;color:#fff!important;border:1px solid #145b87}
+.climate-notice-secondary{background:#fffdf7;color:#164b69!important;border:1px solid #dbcfae}
+.climate-notice a:hover{text-decoration:underline;box-shadow:0 2px 7px #103c5220}
+.climate-notice a:focus-visible{outline:3px solid #125e93;outline-offset:4px}
+.climate-notice-external{width:15px;height:15px;flex:none}
+.climate-notice-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:1000px){.climate-notice{flex-wrap:wrap}.climate-notice-actions{flex:1 0 100%;flex-direction:row;min-width:0}.climate-notice-actions a{flex:1}}
+@media(max-width:560px){.climate-notice{gap:12px;padding:16px 14px;border-radius:14px}.climate-notice-icon{flex-basis:40px;width:40px;height:48px}.climate-notice-icon svg{width:30px;height:36px}.climate-notice-label{font-size:9px;letter-spacing:.6px}.climate-notice h2{font-size:18px}.climate-notice p{font-size:13px}.climate-notice-actions{flex-direction:column}.climate-notice-actions a{width:100%}}
+@media(forced-colors:active){.climate-notice,.climate-notice a{border:1px solid CanvasText}.climate-notice-primary,.climate-notice-secondary{color:LinkText!important}}
