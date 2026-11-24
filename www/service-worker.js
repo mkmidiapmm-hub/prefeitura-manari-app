@@ -1,5 +1,5 @@
-const CACHE='manari-v6-47-divino-natal-theme';
-const VERSION='6.47';
+const CACHE='manari-v6-48-sidebar-cleanup';
+const VERSION='6.48';
 const NATAL_BASE=new URL('divino-natal/',self.registration.scope).pathname;
 const isNatalPath=pathname=>pathname===NATAL_BASE.slice(0,-1)||pathname.startsWith(NATAL_BASE);
 const PUBLIC_PAGES=['noticias','localizacao'].flatMap(name=>{const path=new URL(name,self.registration.scope).pathname;return [path,path+'.html',path+'/']});

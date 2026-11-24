@@ -10,7 +10,7 @@
   document.querySelectorAll('#manariSecretariasRail .secretaria-chip[data-dept]').forEach(chip=>{
    const img=chip.querySelector('img');if(!img||img.closest('.msr-logo'))return;
    const dept=chip.dataset.dept,frame=document.createElement('span');frame.className='msr-logo';frame.setAttribute('aria-hidden','true');
-   if(whiteText.has(dept))frame.classList.add('msr-logo-dark');
+   if(whiteText.has(dept))frame.classList.add('msr-logo-contrast');
    if(full.has(dept)){
     frame.classList.add('msr-logo-full');const original=img.src;
     img.addEventListener('error',()=>{img.src=original;frame.classList.remove('msr-logo-full');},{once:true});

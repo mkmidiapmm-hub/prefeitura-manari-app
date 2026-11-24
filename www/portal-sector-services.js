@@ -29,6 +29,7 @@
     return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;
   }
   function destination(title, department, base) {
+    if(department==='assistencia' && ['cras','creas'].includes(norm(title))){const url=new URL('./',base);url.hash=norm(title);return {url:url.href,action:'Conhecer atendimento',symbol:'people'};}
     if(department==='saude' && norm(title)==='e-sus') return {url:'https://esus.manari.pe.gov.br/',action:'Acessar e-SUS',symbol:'health'};
     if(department==='saude' && norm(title)==='unidades de saude (ubs)'){const url=new URL('./',base);url.hash='saude-unidades';return {url:url.href,action:'Ver unidades',symbol:'health'};}
     const education = {'Matrícula Escolar':['matricula','Solicitar pré-matrícula','education'],'Transporte Escolar':['transporte','Solicitar transporte','route'],'Merenda e Alimentação':['alimentacao','Cardápio e atendimento','service'],'Infraestrutura Escolar':['infraestrutura','Informar problema','building'],'Eventos Culturais':['eventos','Ver agenda e inscrições','people'],'Notícias da Prefeitura':['noticias','Acompanhar Educação','document']};
