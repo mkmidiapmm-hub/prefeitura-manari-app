@@ -1,8 +1,8 @@
-import {SERVICES,STAGES,GRADES,STATUS,SHIFTS,esc,date,safeURL,localDate,schoolTime,validatePhoto,friendly} from './domain.mjs';
-import {api} from './api.mjs?v=6.41';
-import {mapsURL,directionsLink,schoolSummary,locationFields,bindLocationPreview,refreshLocationPreview} from './location.mjs?v=6.43';
-import {icon,banner,guide,enrollmentForm,recentRequests,metrics,schoolTable,queueItems,unavailableState} from './panels.mjs?v=6.43';
-import {schoolID,schoolAccess,schoolAccessURL,scopedSchools,authenticate,accessRoute} from './access.mjs?v=6.40';
+import {SERVICES,STAGES,GRADES,STATUS,SHIFTS,esc,date,safeURL,localDate,schoolTime,validatePhoto,friendly} from './domain.mjs?v=6.53';
+import {api} from './api.mjs?v=6.53';
+import {mapsURL,directionsLink,schoolSummary,locationFields,bindLocationPreview,refreshLocationPreview} from './location.mjs?v=6.53';
+import {icon,banner,guide,enrollmentForm,recentRequests,metrics,schoolTable,queueItems,unavailableState} from './panels.mjs?v=6.53';
+import {schoolID,schoolAccess,schoolAccessURL,scopedSchools,authenticate,accessRoute} from './access.mjs?v=6.53';
 const $=id=>document.getElementById(id),opts=(values,selected='')=>Object.entries(values).map(([v,n])=>`<option value="${esc(v)}"${v===selected?' selected':''}>${esc(n)}</option>`).join('');
 const icons={matricula:'<path d="m2 8 10-5 10 5-10 5L2 8Zm4 3v6c4 3 8 3 12 0v-6m4-3v9"/>',transporte:'<rect x="4" y="3" width="16" height="16" rx="3"/><path d="M4 11h16M7 19v3m10-3v3M8 15h.01M16 15h.01M9 3v8"/>',alimentacao:'<path d="M4 3v7m3-7v7M2 10h7M6 10v12M17 3c-4 5-4 10 0 10h3M20 3v19"/>',infraestrutura:'<path d="M4 21V4h16v17M2 21h20M8 8h1m6 0h1M8 12h1m6 0h1M10 21v-5h4v5"/>',eventos:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18m-12 5h6"/>',noticias:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8m-8 4h8m-8 3h5"/>'};
 let service=Object.hasOwn(SERVICES,new URLSearchParams(location.search).get('servico'))?new URLSearchParams(location.search).get('servico'):'matricula';
@@ -22,10 +22,10 @@ function workspaceUI(){
  const dashboard=workspace==='staff'||workspace==='profile'||!!user&&service==='matricula',view=workspace==='staff'?(context.central||accessMode==='central'?'central':'staff'):'guardian';
  document.body.classList.toggle('education-system',dashboard||service==='matricula');document.body.classList.toggle('education-dashboard',dashboard);document.body.dataset.educationView=view;
  $('edu-system-hero').hidden=!dashboard;$('edu-system-hero').innerHTML=dashboard?banner(view,!!user&&(view==='central'?context.central:view==='staff'?context.central||context.schools.includes(selectedSchool):true)):'';
- $('edu-header-actions').hidden=!dashboard||!user;$('edu-my-account').innerHTML=icon('person')+'Minha conta';$('edu-logout').innerHTML=icon('logout')+'Sair';
+ $('edu-header-actions').hidden=!user;$('edu-open-management').hidden=!user||!roles();$('edu-my-account').innerHTML=icon('person')+'Minha conta';$('edu-logout').innerHTML=icon('logout')+'Sair';
  for(const [id,tab] of [['public-tab','public'],['mine-tab','mine'],['staff-tab','staff'],['profile-tab','profile']])$(id).setAttribute('aria-pressed',String(workspace===tab));
  $('public-tab').innerHTML=icon('file')+(dashboard?'Nova pré-matrícula':'Solicitar serviço');$('mine-tab').innerHTML=icon('folder')+'Meus protocolos';$('profile-tab').innerHTML=icon('person')+'Minha conta';
- $('profile-tab').hidden=!dashboard||view!=='guardian';$('staff-tab').hidden=dashboard&&view==='guardian';$('public-tab').parentElement.hidden=dashboard&&view!=='guardian';
+ $('profile-tab').hidden=!dashboard||view!=='guardian';$('staff-tab').hidden=dashboard&&view==='guardian'&&!roles();$('staff-tab').setAttribute('aria-label',context.central?'Painel da Educação':'Área das escolas');$('public-tab').parentElement.hidden=dashboard&&view!=='guardian';
  $('account').hidden=!user;$('identity').textContent=user?.email||'';$('auth').hidden=!!user||workspace==='public'&&['eventos','noticias'].includes(service);$('public-area').hidden=workspace!=='public';$('mine-area').hidden=workspace!=='mine';$('staff-area').hidden=workspace!=='staff';$('profile-area').hidden=workspace!=='profile';
  const art=$('matriculas-2027');if(art)art.hidden=dashboard||service!=='matricula';
 }
@@ -148,7 +148,8 @@ async function memberAdmin(b=$('staff-body')){const rev=epoch,members=await svc.
  form.onsubmit=e=>{e.preventDefault();void run(form,async rev=>{const f=new FormData(form);await svc.call('edu_set_member',{p_email:String(f.get('email')),p_school:f.get('role')==='central'?null:f.get('school'),p_role:String(f.get('role')),p_active:f.has('active')});if(rev!==epoch)return;message('Vínculo atualizado.');await staff();});};}
 async function identity(){const rev=++epoch;++queueSequence;++mineSequence;queueRows=[];selectedRequest='';user=null;context={central:false,admin:false,schools:[]};$('mine-list').replaceChildren();$('staff-content').replaceChildren();$('public-area').replaceChildren();$('profile-area').replaceChildren();workspaceUI();const r=await client.auth.getUser();if(rev!==epoch)return;user=r.data?.user||null;
  try{schools=await svc.catalog();ready=true;}catch(e){if(rev!==epoch)return;ready=false;schools=[];message(friendly(e),true);}if(rev!==epoch)return;if(user&&ready){try{context=await svc.context();}catch(e){if(rev!==epoch)return;message(friendly(e),true);}}if(rev!==epoch)return;authUI();await render();}
-$('public-tab').onclick=()=>{accessMode='guardian';registering=false;authUI();workspace='public';history.replaceState(null,'',authRedirect());void render();};$('mine-tab').onclick=()=>{accessMode='guardian';registering=false;authUI();workspace='mine';void render();};$('staff-tab').onclick=()=>{staffTab=context.central?'overview':'requests';accessMode=context.central?'central':'school';registering=false;authUI();workspace='staff';history.replaceState(null,'',location.pathname+location.search+'#gestao');void render();};
+$('public-tab').onclick=()=>{accessMode='guardian';registering=false;authUI();workspace='public';history.replaceState(null,'',authRedirect());void render();};$('mine-tab').onclick=()=>{accessMode='guardian';registering=false;authUI();workspace='mine';void render();};$('staff-tab').onclick=()=>{staffTab=context.central?'overview':'requests';accessMode=context.central?'central':'school';registering=false;authUI();workspace='staff';history.replaceState(null,'',authRedirect());void render();};
+$('edu-open-management').onclick=()=>{$('staff-tab').click();if(!$('edu-system-hero').hidden)$('edu-system-hero').scrollIntoView({block:'start',behavior:'smooth'});};
 $('profile-tab').onclick=()=>{workspace='profile';void render();};$('edu-my-account').onclick=()=>{workspace='profile';void render();};$('edu-logout').onclick=()=>{$('logout').click();};
 document.addEventListener('click',e=>{const b=e.target.closest('[data-retry-schools]');if(b)void run(b,async()=>{await identity();});});
 $('lookup').onsubmit=e=>{e.preventDefault();void mine(String(new FormData(e.currentTarget).get('protocol')));};$('all-mine').onclick=()=>{$('lookup').reset();void mine();};

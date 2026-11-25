@@ -1,5 +1,5 @@
-const CACHE='manari-v6-52-visual-layout';
-const VERSION='6.52';
+const CACHE='manari-v6-53-education-refresh';
+const VERSION='6.53';
 const NATAL_BASE=new URL('divino-natal/',self.registration.scope).pathname;
 const isNatalPath=pathname=>pathname===NATAL_BASE.slice(0,-1)||pathname.startsWith(NATAL_BASE);
 const PUBLIC_PAGES=['noticias','localizacao'].flatMap(name=>{const path=new URL(name,self.registration.scope).pathname;return [path,path+'.html',path+'/']});

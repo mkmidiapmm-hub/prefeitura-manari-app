@@ -1,4 +1,4 @@
-import {validate,validatePhoto} from './domain.mjs';
+import {validate,validatePhoto} from './domain.mjs?v=6.53';
 const ok=({data,error})=>{if(error)throw error;return data;};
 export function api(client){
  const call=async(name,args={})=>ok(await client.rpc(name,args));

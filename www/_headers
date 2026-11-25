@@ -21,3 +21,9 @@
   X-Robots-Tag: noindex
 /404.html
   X-Robots-Tag: noindex
+
+# A Educação deve revalidar o painel e seus módulos em cada acesso.
+/educacao/*
+  Cache-Control: no-store, max-age=0, must-revalidate
+  CDN-Cache-Control: no-store
+  Cloudflare-CDN-Cache-Control: no-store
