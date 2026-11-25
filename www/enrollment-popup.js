@@ -4,7 +4,7 @@
   const KEY='manari-matriculas-2027-v1';
   function eligible(location,document){
     const hash=location.hash.toLowerCase(),params=new URLSearchParams(location.search);
-    return ['','#','#inicio','#home'].includes(hash)&&!params.has('post')&&!params.has('portal_invite')&&!!document.querySelector('#mainView .home-hero')&&!document.body.classList.contains('manari-feed-home');
+    return !params.has('layout-canvas')&&['','#','#inicio','#home'].includes(hash)&&!params.has('post')&&!params.has('portal_invite')&&!!document.querySelector('#mainView .home-hero')&&!document.body.classList.contains('manari-feed-home');
   }
   function create(window,document,scriptUrl){
     const base=new URL('./',scriptUrl),education=new URL('educacao/?servico=matricula',base);
