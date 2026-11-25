@@ -1,0 +1,4 @@
+/* Faixa discreta independente do cabeçalho, menus e formulários. */
+.mvc-counter{box-sizing:border-box;display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;max-width:100%;padding:7px clamp(12px,3vw,40px);background:#f7faf5;border-bottom:1px solid #d9e4d6;color:#28563c;font:14px/1.4 system-ui,-apple-system,sans-serif;text-align:right}
+.mvc-label{display:inline-flex;align-items:center;gap:7px}.mvc-label svg{width:19px;height:19px;flex:0 0 19px}.mvc-value{font-weight:750;font-variant-numeric:tabular-nums;color:#164a2c}.mvc-unavailable .mvc-value{font-size:12px;font-weight:400;color:#52685b}
+@media(max-width:520px){.mvc-counter{gap:5px 8px;padding:7px 12px;font-size:12px}.mvc-label svg{width:16px;height:16px;flex-basis:16px}.mvc-unavailable .mvc-value{font-size:11px}}
