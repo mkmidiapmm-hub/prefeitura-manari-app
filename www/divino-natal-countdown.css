@@ -1,0 +1,15 @@
+/* Contador exclusivo da página inicial, integrado à identidade do Divino Natal. */
+.dn-countdown{margin:18px 0 20px;padding:16px 18px;border:1px solid #d6ba6a66;border-radius:16px;background:#001c1399;max-width:590px;min-width:0;box-sizing:border-box}
+.dn-countdown h3{font:700 clamp(15px,1.6vw,19px)/1.35 Montserrat,Arial,sans-serif!important;color:#ffe9ad!important;margin:0 0 8px!important;letter-spacing:0!important}
+.dn-countdown .dn-countdown-when{font:600 15px/1.5 Arial,sans-serif!important;color:#fff6dc!important;margin:0 0 14px!important}
+.dn-countdown-when span{display:block;color:#d1e2d3;font-size:12px;font-weight:400;margin-top:2px}
+.dn-countdown-clock{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.dn-countdown-unit{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;padding:10px 4px 9px;border:1px solid #ecd59066;border-radius:11px;background:linear-gradient(160deg,#fff5cc14,#cba84a0d)}
+.dn-countdown-unit strong{display:block;font:700 clamp(25px,3.4vw,43px)/1.1 Montserrat,Arial,sans-serif;font-variant-numeric:tabular-nums;color:#ffdf87;letter-spacing:.025em}
+.dn-countdown-unit span{font:600 11px/1.5 Arial,sans-serif;color:#f1ead6;margin-top:5px}
+.dn-countdown .dn-countdown-ended{font:600 16px/1.5 Arial,sans-serif!important;color:#ffe9ad!important;margin:0!important;padding:10px 0}
+.dn-countdown [hidden]{display:none!important}
+@media(max-width:560px){.dn-countdown{padding:13px 10px;margin:14px 0 16px;max-width:100%;width:100%}.dn-countdown-clock{gap:6px}.dn-countdown-unit{padding:9px 2px}.dn-countdown h3{font-size:15px!important}.dn-countdown .dn-countdown-when{font-size:14px!important}.dn-countdown-unit strong{font-size:27px}.dn-countdown-unit span{font-size:10px}.dn-countdown-when span{font-size:11px}}
+@media(forced-colors:active){.dn-countdown,.dn-countdown-unit{border:1px solid CanvasText;background:Canvas}.dn-countdown h3,.dn-countdown p,.dn-countdown strong,.dn-countdown span{color:CanvasText!important}}
+
+@media(max-width:380px){.dn-countdown-clock{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.dn-countdown-unit strong{font-size:30px}.dn-countdown-unit span{font-size:11px}}
