@@ -186,3 +186,21 @@ body.manari-emerald-portal{padding-left:0!important;--manari-sector-rail:0px!imp
 .manari-emerald-portal .sector-service-tile:hover{background:#1a4b3b}
 .manari-emerald-portal .sector-service-tile :is(strong,small,.sector-service-action){color:var(--emerald-ink)}
 .manari-emerald-portal .sector-service-icon{color:var(--emerald-gold)}
+/* Três marcas completas por vez, em molduras quadradas. */
+.manari-emerald-portal #manariSecretariasRail .msr-frame{max-width:960px;margin-inline:auto}
+.manari-emerald-portal #manariSecretariasRail .secretaria-strip{gap:16px!important}
+.manari-emerald-portal #manariSecretariasRail .secretaria-chip{flex:0 0 calc((100% - 32px)/3)!important;width:calc((100% - 32px)/3)!important;min-width:0!important;min-height:0!important;align-items:stretch!important;padding:0!important;gap:10px!important}
+.manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo{position:relative!important;width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1/1;flex:none!important;padding:0!important;border-radius:12px!important}
+.manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo>img{position:absolute!important;inset:10px!important;width:calc(100% - 20px)!important;height:calc(100% - 20px)!important;object-fit:contain!important;max-width:none!important;max-height:none!important}
+.manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo+span{font-size:14px!important;line-height:1.25!important;min-height:2.5em}
+/* A arte original é transparente. Enquadra somente suas margens vazias. */
+.manari-emerald-portal .topbar .brand-white-lockup{position:relative;width:230px;height:auto!important;aspect-ratio:1826/565;overflow:hidden;flex:0 0 230px;background:transparent!important;padding:0!important;border:0;border-radius:0}
+.manari-emerald-portal .topbar .brand-white-lockup .brand-white-mark{position:absolute!important;display:block;width:109.529025%!important;height:auto!important;max-width:none!important;left:-3.285871%;top:-106.017699%;object-fit:contain!important;margin:0;padding:0;background:transparent}
+@media(max-width:720px){
+ .manari-emerald-portal #manariSecretariasRail .secretaria-strip{gap:10px!important}
+ .manari-emerald-portal #manariSecretariasRail .secretaria-chip{flex-basis:calc((100% - 20px)/3)!important;width:calc((100% - 20px)/3)!important;gap:8px!important}
+ .manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo>img{inset:6px!important;width:calc(100% - 12px)!important;height:calc(100% - 12px)!important}
+ .manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo+span{font-size:13px!important}
+ .manari-emerald-portal .topbar .brand-white-lockup{width:190px;flex-basis:190px}
+}
+@media(max-width:360px){.manari-emerald-portal .topbar .brand-white-lockup{width:165px;flex-basis:165px}.manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo+span{font-size:12px!important}}
