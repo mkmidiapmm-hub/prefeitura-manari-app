@@ -28,3 +28,29 @@ body.manari-divino-natal{background:#f4f8f3}
 @media(max-width:560px){.dn-banner{flex-direction:column;align-items:flex-start;padding:24px 16px 20px;gap:6px;border-radius:18px;margin-bottom:16px}.dn-banner-logo{width:115px;height:115px;align-self:center}.dn-banner h2{font-size:25px!important}.dn-banner p{font-size:15px}.dn-eyebrow{font-size:10px;letter-spacing:.06em}.dn-cta{width:100%;padding:11px 9px}.dn-banner .dn-tree{width:65px;height:100px;opacity:.2}}
 @media(prefers-reduced-motion:reduce){.dn-lights i{animation:none}}
 @media(forced-colors:active){.dn-lights,.dn-tree{display:none}.dn-cta{border:2px solid ButtonText}}
+
+/* Arte original fornecida para o fundo da campanha; os controles continuam em HTML. */
+.dn-banner{background:#00340f url('divino-natal/banner-fundo.webp') left center/cover no-repeat;padding:32px 24px}
+.dn-banner::after{display:none}
+.dn-banner>.dn-banner-logo,.dn-banner>.dn-tree,.dn-banner>.dn-lights{display:none}
+.dn-banner .dn-banner-copy{flex:none;width:44%;margin-left:29%;padding:5px 0}
+.dn-banner h2{font-size:28px!important;line-height:1.15!important;text-shadow:0 2px 10px #00170099}
+.dn-banner .dn-banner-copy>p{font-size:15px;text-shadow:0 1px 6px #001700}
+.dn-banner .dn-countdown{margin:14px 0 16px;padding:14px;background:#001c13c4}
+.dn-banner .dn-countdown h3{font-size:16px!important}
+.dn-banner .dn-countdown-unit strong{font-size:34px}
+@media(max-width:1100px){
+ .dn-banner{display:block;padding:0 18px 22px;background-position:center top;background-size:100% auto}
+ .dn-banner::before{content:'';display:block;aspect-ratio:1536/584;margin:0 -18px 18px}
+ .dn-banner .dn-banner-copy{width:100%;margin:0;padding:0}
+ .dn-banner h2{font-size:28px!important}
+ .dn-banner .dn-countdown{max-width:590px}
+}
+@media(max-width:560px){
+ .dn-banner{padding:0 16px 20px}
+ .dn-banner::before{margin:0 -16px 16px}
+ .dn-banner h2{font-size:25px!important}
+ .dn-banner .dn-countdown h3{font-size:15px!important}
+ .dn-banner .dn-countdown-unit strong{font-size:27px}
+}
+@media(forced-colors:active){.dn-banner{background:Canvas;color:CanvasText}.dn-banner::before{display:none}.dn-banner .dn-banner-copy{width:100%;margin-left:0}.dn-banner>.dn-banner-logo{display:block}}
