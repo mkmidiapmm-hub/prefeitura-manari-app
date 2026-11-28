@@ -204,3 +204,15 @@ body.manari-emerald-portal{padding-left:0!important;--manari-sector-rail:0px!imp
  .manari-emerald-portal .topbar .brand-white-lockup{width:190px;flex-basis:190px}
 }
 @media(max-width:360px){.manari-emerald-portal .topbar .brand-white-lockup{width:165px;flex-basis:165px}.manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo+span{font-size:12px!important}}
+/* Computador: faixa compacta. As três molduras maiores ficam nas telas até 900 px. */
+@media(min-width:901px){
+ .manari-emerald-portal #manariSecretariasRail{margin-top:6px;margin-bottom:18px}
+ .manari-emerald-portal #manariSecretariasRail .msr-head{padding-bottom:10px!important;font-size:14px!important}
+ .manari-emerald-portal #manariSecretariasRail .msr-frame{max-width:none;width:100%;gap:8px}
+ .manari-emerald-portal #manariSecretariasRail .secretaria-strip{gap:12px!important;padding-bottom:8px!important}
+ .manari-emerald-portal #manariSecretariasRail .secretaria-chip{flex:0 0 136px!important;width:136px!important;gap:8px!important}
+ .manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo{width:96px!important;height:96px!important;align-self:center;aspect-ratio:1/1;border-radius:10px!important}
+ .manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo>img{inset:7px!important;width:calc(100% - 14px)!important;height:calc(100% - 14px)!important}
+ .manari-emerald-portal #manariSecretariasRail .secretaria-chip>.msr-logo+span{font-size:13px!important;line-height:1.25!important;min-height:2.5em}
+ .manari-emerald-portal #manariSecretariasRail .msr-scroll{width:28px;min-width:28px;font-size:28px}
+}
