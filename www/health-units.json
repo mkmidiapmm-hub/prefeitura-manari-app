@@ -1,3 +1,124 @@
 {
-  "units": []
+  "units": [
+    {
+      "name": "Secretaria Municipal de Saúde",
+      "address": "Rua Nova, s/n",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "Unidade Mista João Paulo II",
+      "address": "Rua Nova, s/n",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "Central de Regulação",
+      "address": "Rua Nova, s/n",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "Coord. de Atenção Primária à Saúde",
+      "address": "Rua Nova, s/n",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "E-Multi (Centro de Especialidades)",
+      "address": "Rua Costa e Silva, nº 63",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "Vigilância em Saúde",
+      "address": "Rua Antônio Dantas, nº 107",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "Vigilância Epidemiológica",
+      "address": "Rua Antônio Dantas, nº 107",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "Departamento de Vigilância Sanitária",
+      "address": "Rua Antônio Dantas, nº 107",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "Coordenação PNI (Programa Nacional de Imunizações)",
+      "address": "Rua Nova, nº 30",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "Academia da Saúde - Sede",
+      "address": "Rua Nova, nº 23",
+      "locality": "Ginásio",
+      "active": true
+    },
+    {
+      "name": "Academia da Saúde",
+      "address": "Rua da Quadra",
+      "locality": "Zona Rural / Distrito Santa Luzia",
+      "active": true
+    },
+    {
+      "name": "CAPS (Centro de Atenção Psicossocial)",
+      "address": "Rua Arcelino, nº 94",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "UBSF Josefa Nadir Vieira",
+      "address": "Rua Alto do Morcego, s/n",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "ESF Antônio Tadeu Pedro Lima",
+      "address": "Rua Alto do Morcego, s/n",
+      "locality": "Centro",
+      "active": true
+    },
+    {
+      "name": "UBSF Manoel Alexandre dos Santos",
+      "address": "Sítio Umbuzeiro Doce, s/n",
+      "locality": "Zona Rural",
+      "active": true
+    },
+    {
+      "name": "UBSF Antônio Audálio da Silva",
+      "address": "Travessa Centro Santa Luzia, s/n",
+      "locality": "Zona Rural / Distrito Santa Luzia",
+      "active": true
+    },
+    {
+      "name": "UBSF Joel Pedro da Silva",
+      "address": "Povoado Serra do Exu, s/n",
+      "locality": "Zona Rural",
+      "active": true
+    },
+    {
+      "name": "UBSF Severina Ferreira Barros",
+      "address": "Sítio Minador, s/n",
+      "locality": "Zona Rural",
+      "active": true
+    },
+    {
+      "name": "UBSF Manoel Clarindo do Nascimento",
+      "address": "Sítio Estiva, s/n",
+      "locality": "Zona Rural",
+      "active": true
+    },
+    {
+      "name": "SAMU (Serviço de Atendimento Móvel de Urgência)",
+      "address": "Rua da Quadra, nº 106",
+      "locality": "Centro",
+      "active": true
+    }
+  ]
 }
