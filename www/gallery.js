@@ -1,6 +1,10 @@
 /* Public gallery: read-only, accessible photo/album navigation. */
 (()=>{
- 'use strict';const M=window.ManariGalleryModel,S=window.ManariGalleryStore;if(!M||!S)return;
+ 'use strict';
+ // An older installed service worker may inject the classic portal's first-paint gate.
+ document.getElementById('manari-first-paint-gate')?.remove();
+ document.getElementById('manari-classic-gate')?.remove();
+ const M=window.ManariGalleryModel,S=window.ManariGalleryStore;if(!M||!S)return;
  const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  let doc=S.seed(),category='',view='photos',album='',limit=12,filtered=[],index=0,returnFocus=null,busy=false,loadMessage='',frame=0;
  const grid=$('#mg-grid'),status=$('#mg-status'),dialog=$('#mg-lightbox');
