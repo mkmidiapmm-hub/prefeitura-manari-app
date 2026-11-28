@@ -31,7 +31,7 @@
   function destination(title, department, base) {
     if(department==='assistencia' && ['cras','creas'].includes(norm(title))){const url=new URL('./',base);url.hash=norm(title);return {url:url.href,action:'Conhecer atendimento',symbol:'people'};}
     if(department==='saude' && norm(title)==='e-sus') return {url:'https://esus.manari.pe.gov.br/',action:'Acessar e-SUS',symbol:'health'};
-    if(department==='saude' && norm(title)==='unidades de saude (ubs)'){const url=new URL('./',base);url.hash='saude-unidades';return {url:url.href,action:'Ver unidades',symbol:'health'};}
+    if(department==='saude' && norm(title)==='unidades de saude (ubs)'){const url=new URL('./',base);url.hash='saude-unidades';return {url:url.href,action:'Conhecer a rede',symbol:'health'};}
     const education = {'Matrícula Escolar':['matricula','Solicitar pré-matrícula','education'],'Transporte Escolar':['transporte','Solicitar transporte','route'],'Merenda e Alimentação':['alimentacao','Cardápio e atendimento','service'],'Infraestrutura Escolar':['infraestrutura','Informar problema','building'],'Eventos Culturais':['eventos','Ver agenda e inscrições','people'],'Notícias da Prefeitura':['noticias','Acompanhar Educação','document']};
     if(department === 'educacao' && education[title]){const [service,action,symbol]=education[title],url=new URL('./educacao/',base);url.searchParams.set('servico',service);return {url:url.href,action,symbol};}
     const match = department === 'infraestrutura' && maintenance[title];
@@ -46,6 +46,7 @@
     if(department==='saude' && !items.some(([title])=>norm(title)==='e-sus')) items=[...items,['e-SUS','Sistema e-SUS da Secretaria Municipal de Saúde']];
     return `<div class="service-grid sector-service-grid">${items.map(([title, description]) => {
       const dest = destination(title, department, base);
+      if(department==='saude' && norm(title)==='unidades de saude (ubs)') title='Rede Municipal de Saúde';
       const attributes = dest ? `href="${esc(dest.url)}" data-sector-request` : `type="button" data-service="${esc(title)}"`;
       const tag = dest ? 'a' : 'button';
       return `<${tag} class="sector-service-tile" ${attributes} title="${esc(description)}"><span class="sector-service-icon">${icon(title, dest?.symbol)}</span><span class="sector-service-title">${esc(title)}</span><span class="sector-service-action">${esc(dest?.action || 'Consultar serviço')} <span aria-hidden="true">›</span></span></${tag}>`;
