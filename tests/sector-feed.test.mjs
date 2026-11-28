@@ -4,7 +4,7 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 
 function harness(){
- const queries=[],pending=[];
+ const queries=[],pending=[],clicks=[],scrolls=[];
  function root(department){
   const list={html:'',replaceChildren(...els){this.html=els.map(e=>e.textContent||'').join('');},insertAdjacentHTML(_,html){this.html+=html;},set innerHTML(s){this.html=s;},get innerHTML(){return this.html;}};
   const more={hidden:true},refresh={};
@@ -12,10 +12,10 @@ function harness(){
  }
  let current=root('infraestrutura');
  const client={from(table){const ops=[['from',table]],q={};for(const key of ['select','in','eq','lte','order'])q[key]=(...args)=>{ops.push([key,...args]);return q;};q.range=(...args)=>{ops.push(['range',...args]);queries.push(ops);return new Promise(resolve=>pending.push(resolve));};return q;}};
- const document={querySelector(s){if(s==='#manariFeed')return {};if(s==='[data-sector-feed]')return current;return null;},addEventListener(){}};
- const window={ManariPortalAuth:{getClient:async()=>client},addEventListener(){}};
+ const document={body:{classList:{toggle(){},contains(){return false;}}},querySelector(s){if(s==='#manariFeed')return {};if(s==='[data-sector-feed]')return current;return null;},addEventListener(type,handler,capture){if(type==='click'&&!capture)clicks.push(handler);}};
+ const window={scrollTo(options){scrolls.push(options);},ManariPortalAuth:{getClient:async()=>client},addEventListener(){}};
  vm.runInNewContext(readFileSync('www/portal-feed.js','utf8'),{window,document,URL,URLSearchParams,Map,Date,setTimeout});
- return {window,queries,pending,get current(){return current;},switchTo(code){current.isConnected=false;return current=root(code);}};
+ return {window,queries,pending,scrolls,clickRail(kind){const button={matches(selector){return selector==='.secretaria-chip[data-dept]'&&kind==='chip';},hasAttribute(){return false;},closest(selector){return ['button,a','button'].includes(selector)?button:selector==='#manariSecretariasRail'?{}:null;}};for(const handler of clicks)handler({target:button});},get current(){return current;},switchTo(code){current.isConnected=false;return current=root(code);}};
 }
 const post=(id,department='obras')=>({id,title:'Publicação '+id,department_id:department,body:'Atualização oficial',publish_at:'2026-11-18T09:00:00Z'});
 test('feed consulta somente a secretaria atual e conteúdo publicado, com paginação e ordem estável',async()=>{
@@ -35,4 +35,14 @@ test('troca rápida de secretaria ignora a resposta atrasada do setor anterior',
  h.pending[1]({data:[post('saude','saude')],error:null});await second;
  h.pending[0]({data:[post('obras')],error:null});await first;
  assert(h.current.list.html.includes('Publicação saude'));assert(!h.current.list.html.includes('Publicação obras'));assert(!old.list.html.includes('Publicação obras'));
+});
+
+test('setas da faixa não acionam a navegação do feed nem rolam a página para o topo',()=>{
+ const h=harness();
+ h.clickRail('next');h.clickRail('previous');h.clickRail('next');
+ assert.equal(h.scrolls.length,0);
+});
+test('selecionar uma secretaria mantém o tratamento de navegação existente',()=>{
+ const h=harness();h.clickRail('chip');
+ assert.equal(h.scrolls.length,1);assert.equal(h.scrolls[0].top,0);
 });
