@@ -27,3 +27,7 @@
   Cache-Control: no-store, max-age=0, must-revalidate
   CDN-Cache-Control: no-store
   Cloudflare-CDN-Cache-Control: no-store
+
+/galeria
+  Link: <https://www.manari.pe.gov.br/galeria>; rel="canonical"
+  Cache-Control: no-cache
